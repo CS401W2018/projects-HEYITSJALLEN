@@ -1,4 +1,10 @@
-p {
+main p {
     color: red;
     font-family: Arial, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:  smaller;
+}
+
+footer p {
+    color:blueviolet;
 }

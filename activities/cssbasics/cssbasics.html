@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="cssbasics.css">
 </head>
 <body>
     <header>
@@ -14,9 +15,6 @@
     </nav>
     <main>
         <h1>CSS Basics</h1>
-      <style>
-        
-      </style>
 
         <!-- style="color: aquamarine; font-family: Arial;" - This value makes changes the color and the style of the words -->
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -26,11 +24,18 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Odit ipsum veritatis aspernatur dolor quos? Perspiciatis aperiam excepturi beatae obcaecati quod dolore fugiat iste corrupti. 
             Maxime veniam a cum totam ad! </p>
+
         <h2>Explain the difference between inline, embedded, and external CSS.</h2>
-        <p></p>
+        <p>Incline - Defined directly within an HTML element using the style attribute.</p>
+        <p>Embedded - Placed within the  tag in the head section of an HTML document.<p>
+        <p>External CSS - Defined in a separate .css file, which is linked to the HTML document using the link tag.</p>
+
         <h2>Explain why you should only use external CSS.</h2>
-        <p></p>
+        <p>Because it promotes a clear separation between HTML structure and CSS presentation, making the code more organized, modular, and easier to maintain. An external CSS file can be reused across multiple pages, reducing redundancy and improving consistency. It also enhances maintainability, as global changes can be applied easily from a single location. Additionally, external CSS improves performance since browsers cache the files, leading to faster load times for users navigating multiple pages.</p>
+
         <h2>What is a selector used for?</h2>
+        <p>In HTML, a selector is used to change the style of a specific type of element by selecting it and applying a set of CSS rules. Selectors are the names given to styles in internal and external style sheets.</p>
+
     </main>
     <footer>
         <p>&copy; 2024 Jared Allen Wenceslao</p>
