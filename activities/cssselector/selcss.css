@@ -1,0 +1,21 @@
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+#first {
+    /* background-color: lightblue  -----> Highlights the background first paragraph inside of the body of the selectors.html*/
+    color: lightblue;
+}
+
+/* Instead using # */
+.green {
+    color: green;
+}
+
+.bigger {
+    font-size: 24px;
+}
+
+main .bigger {
+    font-family: Jokerman;
+}
