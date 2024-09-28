@@ -1,26 +1,61 @@
+/* styles.css */
+
 body {
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #e0e7ff; /* Light blue background */
+    color: #333; /* Darker text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-#first {
-    /* background-color: lightblue  -----> Highlights the background first paragraph inside of the body of the selectors.html*/
-    color: lightblue;
+header {
+    background-color: #1e3a8a; /* Dark navy blue */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-/* Instead using # */
-.green {
-    color: green;
+h1 {
+    font-family: 'Brush Script MT', cursive; /* Script font for title */
+    font-size: 48px;
+    margin: 0;
 }
 
-.bigger {
-    font-size: 24px;
+h2 {
+    color: #1e3a8a; /* Navy blue for headings */
 }
 
-main .bigger {
-    font-family: Jokerman;
+a {
+    color: #1d4ed8; /* Dark blue for links */
+    text-decoration: none;
 }
 
-/* Additional code for  background */
-body {
-    background-color: lightblue;
-   }
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    background-color: #f8fafc; /* Light gray for section background */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.emphasize {
+    color: #d97706; /* Emphasized text in orange */
+    font-weight: bold;
+}
+
+.de-emphasize {
+    color: #9ca3af; /* De-emphasized text in light gray */
+}
