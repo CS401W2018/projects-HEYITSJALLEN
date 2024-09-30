@@ -1,19 +1,12 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0e7ff; /* Light blue background */
+    background-color: #a0b0e7; /* Light blue background */
     color: #333; /* Darker text */
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 header {
     background-color: #1e3a8a; /* Dark navy blue */
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
 }
 
 h1 {
@@ -26,15 +19,6 @@ h2 {
     color: #1e3a8a; /* Navy blue for headings */
 }
 
-a {
-    color: #1d4ed8; /* Dark blue for links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 section {
     padding: 20px;
     background-color: #f8fafc; /* Light gray for section background */
@@ -42,20 +26,11 @@ section {
     border-radius: 10px;
 }
 
-footer {
-    text-align: center;
+/* footer {
     background-color: #1e3a8a;
     color: white;
     position: absolute;
     bottom: 0;
     width: 100%;
-}
+} */
 
-.emphasize {
-    color: #d97706; /* Emphasized text in orange */
-    font-weight: bold;
-}
-
-.de-emphasize {
-    color: #9ca3af; /* De-emphasized text in light gray */
-}
