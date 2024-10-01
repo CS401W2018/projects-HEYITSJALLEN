@@ -1,12 +1,13 @@
 body {
+    width: 100%;
     font-family: Arial, sans-serif;
     background-color: #a0b0e7; /* Light blue background */
     color: #333; /* Darker text */
-    margin: 10;
-    padding: 0;
 }
 
 header {
+    width: 100%;
+
     font-family: 'Brush Script MT', cursive; /* Script font for title */
     background : #1e3a8a; /* Dark navy blue */
     font-size: 30px;
