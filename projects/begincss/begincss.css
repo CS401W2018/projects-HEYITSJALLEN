@@ -7,11 +7,15 @@ body {
 
 header {
     width: 100%;
-
-    font-family: 'Brush Script MT', cursive; /* Script font for title */
     background : #1e3a8a; /* Dark navy blue */
-    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+header .title {
+    font-family: 'Brush Script MT', cursive; /* Script font for title */
     color: #fff;
+    font-size: 60px;
 }
 
 .navy {
