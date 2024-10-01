@@ -9,6 +9,7 @@ body {
 header {
     font-family: 'Brush Script MT', cursive; /* Script font for title */
     background : #1e3a8a; /* Dark navy blue */
+    font-size: 30px;
     color: #fff;
 }
 
