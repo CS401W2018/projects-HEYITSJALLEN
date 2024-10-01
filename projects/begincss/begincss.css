@@ -13,14 +13,8 @@ header {
     color: #fff;
 }
 
-header .namestyle {
-    font-family: 'Brush Script MT', cursive; /* Script font for title */
-    font-size: 48px;
-    margin: 0;
-}
-
 .navy {
-    color: #1e2536; /* Navy blue for */
+    color: #1e2536; 
 }
 
 .purple {
