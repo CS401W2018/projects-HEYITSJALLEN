@@ -2,35 +2,42 @@ body {
     font-family: Arial, sans-serif;
     background-color: #a0b0e7; /* Light blue background */
     color: #333; /* Darker text */
+    margin: 10;
+    padding: 0;
 }
 
 header {
-    background-color: #1e3a8a; /* Dark navy blue */
+    font-family: 'Brush Script MT', cursive; /* Script font for title */
+    background : #1e3a8a; /* Dark navy blue */
     color: #fff;
 }
 
-h1 {
+header .namestyle {
     font-family: 'Brush Script MT', cursive; /* Script font for title */
     font-size: 48px;
     margin: 0;
 }
 
-h2 {
-    color: #1e3a8a; /* Navy blue for headings */
+.navy {
+    color: #1e2536; /* Navy blue for */
 }
 
-section {
-    padding: 20px;
-    background-color: #f8fafc; /* Light gray for section background */
-    margin: 20px;
-    border-radius: 10px;
+.purple {
+    color: rgb(120, 19, 235);
+} 
+
+.gray {
+    color: rgb(114, 113, 115);
+} 
+
+.green {
+    color: rgb(54, 125, 7);
+} 
+
+
+.namestyle {
+    font-family: 'Brush Script MT', cursive; /* Script font for title */
+    font-size: 48px;
+    margin: 0;
 }
-
-/* footer {
-    background-color: #1e3a8a;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-} */
-
+   
