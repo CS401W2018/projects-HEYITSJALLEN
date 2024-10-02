@@ -1,0 +1,17 @@
+body {
+    font-size: 14px;
+    background-color: beige;
+}
+
+h1 {
+    font-family: 'Brush Script MT', cursive; /* Script font for title */
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif /* Script font for title */
+}
+
+.picture1 {
+    background-image: url('1143187.jpg');
+}
+
