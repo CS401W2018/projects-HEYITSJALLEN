@@ -1,0 +1,39 @@
+body {
+ background-color: rgb(230, 212, 248);
+}
+
+header {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.homebotton {
+    text-emphasis-color: red;
+}
+
+.byodotemple {
+    font-size: 18px;
+}
+
+.crouchinglion {
+    font-size: 18px;
+}
+
+.hukilaubeach {
+    font-size: 18px;
+}
+
+.laiefalls {
+    font-size: 18px;
+}
+
+.waimeavalley {
+    font-size: 18px;
+}
