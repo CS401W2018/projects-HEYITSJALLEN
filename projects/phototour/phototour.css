@@ -41,3 +41,7 @@ h2 {
 .link {
     text-decoration: none;
 }
+
+.list {
+    list-style-image:url(HAWAIIANFLOWER.ico)  ;
+}
