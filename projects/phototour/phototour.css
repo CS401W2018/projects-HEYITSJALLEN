@@ -24,6 +24,7 @@ header {
 
 .homebotton {
     color: rgb(78, 75, 121);
+    text-decoration: none; /* Removes underline */
 }
 
 .list {
@@ -34,4 +35,5 @@ header {
 nav a {
     color: rgb(245, 252, 243);
     font-family: Arial, sans-serif;
+    text-decoration: none; /* Removes underline */
 }
