@@ -28,9 +28,10 @@ header {
 }
 
 .list {
-    list-style-image: url("hawaiianflower.ico");
+    list-style-image: url("path/to/hawaiianflower.ico"); /* Ensure the path is correct */
     list-style-position: inside;
 }
+
 
 nav a {
     color: rgb(245, 252, 243);
