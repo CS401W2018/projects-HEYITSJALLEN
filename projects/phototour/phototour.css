@@ -1,17 +1,20 @@
 body {
  background-color: rgb(230, 212, 248);
+ font-family: Arial, Helvetica, sans-serif;
+ color:rgb(2, 7, 11);
+ background: url("lightgreensneki.jpg");
+
 }
 
 header {
+    background: url("usflag.png") top right no-repeat;
+    height: 20px;
+    width: 50px;
+}
+
+h1 h2{
     font-family: Arial, sans-serif;
-}
-
-h1 {
     font-size: 24px;
-}
-
-h2 {
-    font-size: 18px;
 }
 
 .homebotton {
@@ -45,4 +48,6 @@ h2 {
 
 nav a {
     color: rgb(43, 80, 28);
+    font-family: Arial, sans-serif;
+    
 }
