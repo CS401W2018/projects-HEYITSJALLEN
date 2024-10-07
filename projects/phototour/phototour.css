@@ -1,53 +1,37 @@
 body {
- background-color: rgb(230, 212, 248);
- font-family: Arial, Helvetica, sans-serif;
- color:rgb(2, 7, 11);
- background: url("lightgreensneki.jpg");
-
+    background-color: rgb(230, 212, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(2, 7, 11);
+    background: url("lightgreensneki.jpg");
 }
 
 header {
-    background: url("usflag.png") top right no-repeat;
-    height: 20px;
-    width: 50px;
+    background: url("usflag.png") no-repeat; /* Set the flag as a background */
+    background-position: right bottom; /* Move flag to the bottom-right */
+    background-size: 50px 30px; /* Adjust flag size */
+    height: -120px; /* Adjust height for the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align the text and flag at the bottom */
+    padding-right: 20px; /* Add space to the right for the flag */
+    padding-left: 20px; /* Add padding to the left for header text */
 }
 
-h1 h2{
+.h1 {
     font-family: Arial, sans-serif;
     font-size: 24px;
 }
 
 .homebotton {
-    color: rgb(34, 29, 107);
-}
-
-.byodotemple {
-    font-size: 18px;
-}
-
-.crouchinglion {
-    font-size: 18px;
-}
-
-.hukilaubeach {
-    font-size: 18px;
-}
-
-.laiefalls {
-    font-size: 18px;
-}
-
-.waimeavalley {
-    font-size: 18px;
+    color: rgb(78, 75, 121);
 }
 
 .list {
-    list-style-image:url(hawaiianflower.ico) ;
+    list-style-image: url("hawaiianflower.ico");
     list-style-position: inside;
 }
 
 nav a {
-    color: rgb(43, 80, 28);
+    color: rgb(245, 252, 243);
     font-family: Arial, sans-serif;
-    
 }
