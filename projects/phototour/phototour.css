@@ -15,7 +15,7 @@ h2 {
 }
 
 .homebotton {
-    color: rgb(43, 80, 28);
+    color: rgb(34, 29, 107);
 }
 
 .byodotemple {
@@ -38,10 +38,11 @@ h2 {
     font-size: 18px;
 }
 
-.link {
-    text-decoration: none;
+.list {
+    list-style-image:url(hawaiianflower.ico) ;
+    list-style-position: inside;
 }
 
-.list {
-    list-style-image:url(HAWAIIANFLOWER.ico)  ;
+nav a {
+    color: rgb(43, 80, 28);
 }
