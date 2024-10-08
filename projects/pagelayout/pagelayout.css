@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Wrapper for centering the content */
+.wrapper {
+    width: 850px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: content-box;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.float-left {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+/* Footer styles */
+footer {
+    background-image: url('footer-bg.jpg');
+    background-size: cover;
+    background-origin: padding-box;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    border-top: 2px solid #ddd;
+}
