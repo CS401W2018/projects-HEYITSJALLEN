@@ -6,15 +6,21 @@ body {
 }
 
 header {
-    background: url("usflag.png") no-repeat; /* Set the flag as a background */
-    background-position: right bottom; /* Move flag to the bottom-right */
-    background-size: 50px 30px; /* Adjust flag size */
-    height: -120px; /* Adjust height for the header */
+    background: url("usflag.png") no-repeat;
+    background-position: right bottom;
+    background-size: 50px 30px;
+    height: 120px; /* Positive value to fix height */
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end; /* Align the text and flag at the bottom */
-    padding-right: 20px; /* Add space to the right for the flag */
-    padding-left: 20px; /* Add padding to the left for header text */
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.header-title {
+    flex: 1;
+    text-align: center; /* Center the text inside the div */
 }
 
 .h1 {
@@ -44,4 +50,5 @@ nav a {
     height: auto; /* Keeps the aspect ratio */
     max-width: 100%; /* Ensures responsiveness */
 }
+
 
