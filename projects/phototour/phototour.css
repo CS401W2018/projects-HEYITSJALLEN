@@ -1,7 +1,7 @@
 body {
     background-color: rgb(230, 212, 248);
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(2, 7, 11);
+    color: rgb(14, 46, 73);
     background: url("lightgreensneki.jpg");
 }
 
@@ -32,7 +32,7 @@ h1 {
 }
 
 .homebotton {
-    color: rgb(78, 75, 121);
+    color: rgb(95, 7, 7);
     text-decoration: none; /* Removes underline */
 }
 
