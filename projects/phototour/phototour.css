@@ -18,14 +18,17 @@ header {
     position: relative;
 }
 
+header h1 {
+    color: rgb(78, 75, 121); /* Example color */
+}
+
 .header-title {
     flex: 1;
     text-align: center; /* Center the text inside the div */
 }
 
-.h1 {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
+h1 {
+    color: rgb(255, 210, 203); /* Example color */
 }
 
 .homebotton {
