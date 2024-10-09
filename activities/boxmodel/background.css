@@ -1,3 +1,8 @@
 body {
-    color: beige;
+    background-color: beige;
+}
+
+h1 {
+    text-align: center; /* Centers the text horizontally */
+    margin: 0; /* Optional: removes default margin if needed */
 }
