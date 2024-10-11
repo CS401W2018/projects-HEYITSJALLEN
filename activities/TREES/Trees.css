@@ -12,8 +12,40 @@ nav {
     background-color: azure;
 }
 
+nav ul{
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px 30px;
+    background-color: blue;
+    color: white;
+    border-bottom: thin solid white;
+    float: left;
+}
+
+nav a:hover {
+    color: blue;
+    background-color: white;
+}
 
 #treepic {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    border:  thin solid;
+    float: right;
+}
+
+#treepic img {
+    width: 250px;
+}
+
+.clear {
+    clear: both;
 }
