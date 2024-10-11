@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 300px;
+    background-color: antiquewhite;
+}
+
+nav {
+    width: 300;
+    background-color: azure;
+}
+
+
