@@ -38,8 +38,14 @@ nav a:hover {
 
 #treepic {
     width: 250px;
-    border:  thin solid;
-    float: right;
+    /* border:  thin solid;
+    float: right; */
+    float: left;
+    border: thin solid black;
+    /* position: absolute; */
+    /* position: fixed;
+    bottom: 50px;
+    right: 10px; */
 }
 
 #treepic img {
