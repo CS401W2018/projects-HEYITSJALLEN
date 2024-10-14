@@ -72,6 +72,7 @@ main {
     padding: 20px;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    flex-grow: 1; /* Allow main content to grow and take available space */
 }
 
 .float-left {
@@ -112,13 +113,11 @@ footer {
     color: white;
     font-family: 'Arial', sans-serif;
     border-top: 2px solid #ddd;
-    position: fixed; /* Fixes footer at the bottom */
-    bottom: 0; /* Sticks to the bottom */
-    left: 0; /* Stretches to the left edge */
-    width: 100%; /* Full width across the viewport */
+    width: 100%;
 }
 
 .wrapper {
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* This centers the wrapper horizontally */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure wrapper takes full viewport height */
 }
