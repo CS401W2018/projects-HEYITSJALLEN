@@ -14,22 +14,25 @@ header {
     padding: 40px;
     text-align: center;
     border-bottom: 2px solid #130707;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    height: 250px; 
 }
 
 h1 {
     font-family: 'Georgia', serif;
-    font-size: 2.0em;
-    text-transform: uppercase;
+    font-size: 2.5em; 
+    text-transform: uppercase; 
     color: rgb(184, 16, 16);
     font-style: italic; 
-    font-variant: small-caps; 
+    font-variant: small-caps;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
 }
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bold; 
     background-color: #e0c6c6;
     padding: 10px;
     border-radius: 5px;
@@ -38,12 +41,13 @@ h2 {
     margin-top: 20px; 
     margin-left: 320px; 
     margin-bottom: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Navigation Styles */
 nav ul {
     list-style-type: none;
-    margin-top: 30px; ;
+    margin-top: 30px;
 }
 
 nav ul li {
@@ -51,7 +55,6 @@ nav ul li {
     margin-right: 15px;
 }
 
-/* This is the box inside of the nav tags*/
 nav ul li a {
     text-decoration: none;
     font-family: 'Arial', sans-serif;
@@ -59,8 +62,9 @@ nav ul li a {
     color: rgb(196, 127, 127);
     transition: color 0.3s ease;
     background-color: #e0c6c6;
-    padding: 10px; 
-    border-radius: 5px; 
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 nav ul li a:hover {
@@ -72,17 +76,19 @@ nav ul li a:hover {
 main {
     padding: 20px;
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    flex-grow: 1; 
+    line-height: 1.6; 
+    flex-grow: 1;
 }
 
 .float-left {
     float: left;
-    width: 300px;
+    width: 300px; 
     margin-right: 20px;
     margin-bottom: 20px; 
-    border: 2px solid #110909;
-    border-radius: 10px;
+    padding: 15px; 
+    border: 2px solid #110909; 
+    border-radius: 10px; 
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
 figure img {
@@ -102,12 +108,12 @@ figcaption {
 p {
     font-size: 1.1em;
     font-weight: normal;
-    font-style: normal; 
+    font-style: normal;
 }
 
 /* Footer styles */
 footer {
-    background-color: #e0c6c6; 
+    background-color: #e0c6c6;
     padding: 10px;
     text-align: center;
     color: white;
@@ -119,5 +125,5 @@ footer {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Make sure wrapper takes full viewport height */
+    min-height: 100vh; 
 }
