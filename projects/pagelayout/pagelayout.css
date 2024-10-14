@@ -13,6 +13,7 @@ header {
     background-repeat: no-repeat; 
     padding: 40px;
     text-align: center;
+    border-bottom: 2px solid #130707;
 }
 
 h1 {
@@ -34,15 +35,15 @@ h2 {
     border-radius: 5px;
     border: 2px solid #c47f7f;
     color: rgb(196, 127, 127);
-    margin-top: 20px; /* Add vertical space above the heading */
-    margin-left: 320px; /* Ensure space to the left so the heading doesn't overlap the image */
+    margin-top: 20px; 
+    margin-left: 320px; 
     margin-bottom: 15px;
 }
 
 /* Navigation Styles */
 nav ul {
     list-style-type: none;
-    margin-top: 30px; ; /* Height of the nav tags*/
+    margin-top: 30px; ;
 }
 
 nav ul li {
@@ -72,14 +73,14 @@ main {
     padding: 20px;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    flex-grow: 1; /* Allow main content to grow and take available space */
+    flex-grow: 1; 
 }
 
 .float-left {
     float: left;
     width: 300px;
     margin-right: 20px;
-    margin-bottom: 20px; /* Add space below the image */
+    margin-bottom: 20px; 
     border: 2px solid #110909;
     border-radius: 10px;
 }
