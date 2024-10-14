@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    padding: 10px 5px;
+    background-color: moccasin;
+    border-bottom: thin solid whitesmoke;
+    margin-left: 10px;
+    width: 80px;
+    color: blue;
+}
+
+nav a:hover {
+    background-color: #C9E4CA;
+    color: aliceblue;
+}
+
+#pic1 {
+    width: 200px;
+    border: 1px solid black;
+    float: right;
+}
+
+#pic1 img {
+    width: 200px;
+}
+
+#pic2 {
+    width: 200px;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 30px;
+    right: 300px;
+}
+
+#pic2 img {
+    width: 200px;
+}
+
+.clear {
+    clear: both;
+}

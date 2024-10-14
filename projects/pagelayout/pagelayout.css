@@ -5,20 +5,13 @@
     box-sizing: border-box;
 }
 
-/* Wrapper for centering the content */
-.wrapper {
-    width: 100%;
-    width: 850px;
-    margin: 0 auto;
-}
 
 /* Header styles */
 header {
-    background-image: url('jjkcover.png'); 
-    /* background-color: #ff6347; */
-    background-size: cover;
-    background-clip: border-box;
-    background-origin: content-box;
+    background-image: url('jjkbackground.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     padding: 40px;
     text-align: center;
 }
@@ -27,7 +20,7 @@ h1 {
     font-family: 'Georgia', serif;
     font-size: 2.0em;
     text-transform: uppercase;
-    color: rgb(129, 84, 84);
+    color: rgb(184, 16, 16);
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
     font-style: italic; 
     font-variant: small-caps; 
@@ -99,13 +92,15 @@ p {
 
 /* Footer styles */
 footer {
-    /* background-image: url('footer-bg.jpg');  */
     background-color: #e0c6c6; 
-    background-size: cover;
-    background-origin: padding-box;
     padding: 10px;
     text-align: center;
     color: white;
     font-family: 'Arial', sans-serif;
     border-top: 2px solid #ddd;
+    width: calc(100% + 20px); /* Expands the width a bit more */
+    margin-left: -10px; /* Negative margin to cancel out padding from parent */
+    margin-right: -10px;
+    position: relative;
+    left: 0;
 }
