@@ -102,3 +102,8 @@ footer {
     left: 0; /* Stretches to the left edge */
     width: 100%; /* Full width across the viewport */
 }
+
+.wrapper {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* This centers the wrapper horizontally */
+}
