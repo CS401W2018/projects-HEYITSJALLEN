@@ -7,8 +7,36 @@ body {
     padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    " header header header"
+    "lside main rside"
+    "footer footer footer";
 }
 
 .item {
     background-color: azure;
+}
+
+.itemA {
+    grid-area: lside;
+}
+
+.itemB {
+    grid-area: rside;
+}
+
+.itemC {
+    grid-area: main;
+}
+
+.itemD {
+    grid-area: header;
+}
+
+.itemE {
+    grid-area: footer;
+}
+
+.itemF {
+    grid-area: footer;
 }
