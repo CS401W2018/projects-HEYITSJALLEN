@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: rowrap; */
+    /* flex-wrap: nowrap; */
+    flex-flow: row wrap;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.item {
+    background-color: rgb(162, 221, 221);
+    padding: 10px 5px;
+    width: 50px;
+}
