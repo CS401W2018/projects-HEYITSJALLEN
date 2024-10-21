@@ -10,46 +10,49 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    margin: 0; /* Remove default margin */
+    margin: 0;
+    padding: 0;
 }
 
 /* Header Styling */
 header {
     background-color: #326292;
     color: #fff;
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
-    margin: 0; /* Ensure no margin around header */
+    margin: 0; /* Ensure no margin from the header */
+    border: none; /* Remove any borders */
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin-top: 20px; /* Add space above the title */
+    margin-bottom: 40px; /* Optional: Space below the title */
 }
 
 /* Nav Styling */
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     display: block;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 0 10px;
+    margin: 0 10px; /* Adds space between links */
 }
 
 nav a:hover {
-    background-color: #1abc9c;
-    color: #fff;
+    background-color: #1abc9c; /* Changes the background color on hover */
+    color: #fff; /* Keeps the text color white on hover */
 }
 
-/* Nav Styling */
+
 nav {
     background-color: #777;
     display: flex;
     justify-content: space-around;
-    padding: 5px;
-    width: 100vw; /* Use viewport width to ensure full width */
-    margin: 0; 
-    box-sizing: border-box; /* Ensure padding doesn't add to width */
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box; 
+    margin: 0;
 }
 
 /* Main and Aside */
