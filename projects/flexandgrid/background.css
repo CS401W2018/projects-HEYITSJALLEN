@@ -39,6 +39,7 @@ nav a:hover {
 }
 
 nav {
+    background-color: #777;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -107,11 +108,9 @@ footer {
 
 .footer-links a {
     display: block;
-    padding: 5px;
     color: #333;
     text-decoration: none;
     background-color: #f9f9f9;
-    border-radius: 3px;
 }
 
 .footer-links a:hover {
