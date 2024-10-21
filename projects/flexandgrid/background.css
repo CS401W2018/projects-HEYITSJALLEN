@@ -18,15 +18,15 @@ body {
 header {
     background-color: #326292;
     color: #fff;
-    padding: 10px 0;
+    padding: 0; 
     text-align: center;
-    margin: 0; /* Ensure no margin from the header */
-    border: none; /* Remove any borders */
+    margin: 0; 
 }
 
 header h1 {
-    margin-top: 20px; /* Add space above the title */
-    margin-bottom: 40px; /* Optional: Space below the title */
+    margin-top: 0; 
+    margin-bottom: 10px; 
+    text-align: center;
 }
 
 /* Nav Styling */
@@ -40,8 +40,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #1abc9c; /* Changes the background color on hover */
-    color: #fff; /* Keeps the text color white on hover */
+    background-color: #1abc9c; 
+    color: #fff;
 }
 
 
@@ -49,10 +49,10 @@ nav {
     background-color: #777;
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 0px;
     width: 100%;
     box-sizing: border-box; 
-    margin: 0;
+    margin-bottom: 0px;
 }
 
 /* Main and Aside */
