@@ -10,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    margin: 0; /* Remove default margin */
 }
 
 /* Header Styling */
@@ -18,6 +19,7 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
+    margin: 0; /* Ensure no margin around header */
 }
 
 header h1 {
@@ -31,20 +33,23 @@ nav a {
     padding: 10px 20px;
     display: block;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 0 10px; /* Adds space between links */
+    margin: 0 10px;
 }
 
 nav a:hover {
-    background-color: #1abc9c; /* Changes the background color on hover */
-    color: #fff; /* Keeps the text color white on hover */
+    background-color: #1abc9c;
+    color: #fff;
 }
 
+/* Nav Styling */
 nav {
     background-color: #777;
     display: flex;
-    justify-content: center;
-    padding: 5px; 
-    width: 100%; 
+    justify-content: space-around;
+    padding: 5px;
+    width: 100vw; /* Use viewport width to ensure full width */
+    margin: 0; 
+    box-sizing: border-box; /* Ensure padding doesn't add to width */
 }
 
 /* Main and Aside */
