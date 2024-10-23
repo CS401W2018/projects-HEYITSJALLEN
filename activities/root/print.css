@@ -1,6 +1,5 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 
 header {
@@ -13,9 +12,7 @@ header h1 {
 }
 
 nav {
-    background-color: bisque;
-    display: flex;
-    justify-content: space-around;
+    display: none;
 }
 
 nav a {

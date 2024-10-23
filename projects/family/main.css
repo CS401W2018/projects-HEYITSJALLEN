@@ -7,9 +7,16 @@ body {
     /* overflow: hidden; */
     border: thin solid black;
     box-shadow: 3px 3px 5px rgba(50, 50, 50, 50%);
+    margin: 5px;
 }
 
 .card img {
     /* width: 500px; */
     width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
