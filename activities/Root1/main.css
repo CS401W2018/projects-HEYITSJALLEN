@@ -13,7 +13,7 @@ header h1 {
 }
 
 nav {
-    background-color: bisque;
+    background-color: rgb(23, 18, 12);
     display: flex;
     justify-content: space-around;
 }
@@ -30,15 +30,20 @@ nav a:hover {
 }
 
 .row {
+    display: block;
+    /* flex-direction: row;
+    justify-content: space-between; */
+}
+
+.row {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .card {
     /* width: 200px; */
     /* overflow: hidden; */
-    border: thin solid black;
+    border: medium solid black;
     box-shadow: 3px 3px 5px rgba(50, 50, 50, 50%);
     margin: 5px;
 }
