@@ -31,18 +31,20 @@ nav a:hover {
 
 .row {
     display: block;
-    /* flex-direction: row;
-    justify-content: space-between; */
+   flex-direction: row;
+    justify-content: space-between; 
 }
 
 .row {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .card {
-    /* width: 200px; */
+    width: 50%; 
     /* overflow: hidden; */
+    height: auto;
     border: medium solid black;
     box-shadow: 3px 3px 5px rgba(50, 50, 50, 50%);
     margin: 5px;
@@ -51,9 +53,9 @@ nav a:hover {
 .card img {
     /* width: 500px; */
     width: 100%; 
-    /* max-width: 100%;
-    height: auto;
-    margin-bottom: 10px; */
+
+    /* margin-bottom: 10px;  */
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -62,12 +64,13 @@ nav a:hover {
     }
 
     nav a {
-        border-bottom: ;
+        border-bottom: 2px solid #050202;
     }
     .row {
         display: grid;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
 }
