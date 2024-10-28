@@ -142,9 +142,12 @@ article p {
 
 /* Footer Styling */
 footer {
+    position: relative;
     text-align: center;
     padding: 1em;
     background-color: #f5deb3;
+    bottom: 0;
+    width: 100%;
     font-size: 0.85em;
 }
 
