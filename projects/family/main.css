@@ -29,7 +29,7 @@ nav {
 nav a {
     color: #333;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 1.2em;
 }
 
@@ -130,3 +130,4 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
