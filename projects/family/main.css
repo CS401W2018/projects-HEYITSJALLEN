@@ -53,6 +53,18 @@ nav a:hover {
     gap: 1em;
 }
 
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr; /* One column */
+    grid-gap: 20px;
+    align-items: center; /* Center the title and images vertically */
+}
+
+.main-title {
+    grid-column: 1; /* Span one column */
+    text-align: center;
+}
+
 /* Sidebar Styling */
 aside figure img {
     width: 100%; /* Increase from 80% or whatever it was to 100% */
