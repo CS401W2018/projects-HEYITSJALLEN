@@ -1,0 +1,92 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #eee;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  background-color: #003366;
+  margin: 0;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* Content layout */
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+/* Main content */
+main {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+/* Article styling */
+article {
+  margin-bottom: 20px;
+}
+article img {
+  width: 100%;
+  height: auto;
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .sidebar {
+    order: 1;
+  }
+  main {
+    order: 2;
+  }
+}
+
+/* Print media query */
+@media print {
+  nav {
+    display: none;
+  }
+}
