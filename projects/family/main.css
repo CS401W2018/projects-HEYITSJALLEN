@@ -1,8 +1,9 @@
 /* General Styling */
 body {
     font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
+    margin: fit-content;
+    padding: fit-content;
+    width: fit-content;
     background-color: #f9f5e3;
     color: #333;
 }
