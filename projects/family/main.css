@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #f5deb3;
+    background-color: #f3b239;
     padding: 1em;
     text-align: center;
 }
@@ -17,6 +17,15 @@ header h1 {
     font-family: 'Cursive', serif;
     font-size: 2em;
     color: #333;
+}
+
+main h2 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    margin: 0; 
+    font-family: 'Georgia', serif;
+    padding: 0.5em 20%; 
 }
 
 nav {
@@ -44,15 +53,9 @@ nav a:hover {
 }
 
 /* Sidebar Styling */
-aside {
-    width: 30%;
-    padding: 1em;
-    background-color: #f9f5e3;
-    border-right: 2px solid #ccc;
-}
-
 aside figure img {
-    width: 100%;
+    width: 100%; /* Increase from 80% or whatever it was to 100% */
+    max-width: 250px; /* Optional: Set a maximum width to avoid it becoming too large */
     border-radius: 8px;
 }
 
@@ -82,15 +85,15 @@ main {
 }
 
 article {
-    width: calc(33.333% - 1em);
+    width: calc(25% - 1em); /* Reduce width to make article smaller */
     background-color: #fff;
-    padding: 1em;
+    padding: 1.5em; /* Reduce padding to make it more compact */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
 
 article img {
-    width: 100%;
+    width: 80%; /* Reduce image width inside the article */
     border-radius: 8px;
     margin-bottom: 0.5em;
 }
