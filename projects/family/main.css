@@ -8,10 +8,6 @@ body {
     color: #333;
 }
 
-main {
-    flex: 1;
-}
-
 header {
     background-color: #f3b239;
     padding: 1em;
