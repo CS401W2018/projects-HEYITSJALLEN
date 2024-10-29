@@ -1,168 +1,111 @@
-/* General Styling */
 body {
-    font-family: 'Georgia', serif;
-    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
     padding: 0;
     background-color: #f9f5e3;
     color: #333;
 }
 
 header {
-    background-color: #f3b239;
-    padding: 1em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(235, 194, 118);
+    width: 100%;
+    margin: 10; /* Ensure there is no margin */
 }
 
-header h1 {
-    font-family: 'Cursive', serif;
-    font-size: 2em;
-    color: #333;
+.container {
+    display: flex;
+    padding-bottom: 20px;
 }
 
-main h2 {
-    font-size: 1.5em;
-    color: #333;
-    text-align: center;
-    margin: 0; 
-    margin-bottom: 0.5em;
-    font-family: 'Georgia', serif;
-    padding: 0.5em 40%; 
+aside {
+    width: 25%;
+}
+
+
+header h1, figcaption, a, h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p, li {
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: #f5deb3;
-    padding: 0.5em 0;
+    padding: 1rem 0;
+    background-color: rgb(232, 164, 80);
+    margin-bottom: 20px; /* Add this line */
 }
 
 nav a {
-    color: #333;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.2em;
+    color: black;
+    text-decoration: none; /* Removes underline from links */
 }
 
-nav a:hover {
-    color: #555;
+a:hover {
+    color: rgb(231, 231, 247);
 }
 
-.container {
-    display: flex;
-    padding: 1em;
-    gap: 1em;
+.clear {
+    clear: both;
 }
 
-.main-container {
-    display: grid;
-    grid-template-columns: 1fr; /* One column */
-    grid-gap: 20px;
-    align-items: center; /* Center the title and images vertically */
+figure {
+    margin: 0;
+    padding: 0;
 }
 
-.main-title {
-    grid-column: 1; /* Span one column */
-    text-align: center;
+figure img {
+    max-width: 100%;
 }
 
-/* Sidebar Styling */
-aside figure img {
-    width: 100%; /* Ensure image takes full width in aside */
-    max-width: 250px;
-    border-radius: 8px;
-}
-
-aside h2 {
-    font-size: 1.5em;
-    color: #333;
-    text-align: center;
-    margin-bottom: 0.5em;
-    font-family: 'Georgia', serif;
-}
-
-aside figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-}
-
-aside figcaption {
-    font-style: italic;
-    text-align: center;
-    margin-top: 0.5em;
-}
-
-aside ul {
-    list-style-type: disc;
-    padding-left: 1.2em;
-    margin-top: 1em;
-    line-height: 1.5em;
-}
-
-aside ul li {
-    margin-bottom: 0.5em;
-}
-
-/* Main content styling */
 main {
-    width: 70%;
+    width: 75%;
     display: flex;
-    gap: 1em;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 article {
-    width: calc(25% - 1em);
-    background-color: #fff;
-    padding: 1.5em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    width: 30%;
+    box-shadow: 4px 4px 8px #00000033;
 }
 
-article img {
-    width: 100%; /* Adjust image width to be fully responsive */
-    border-radius: 8px;
-    margin-bottom: 0.5em;
-}
-
-article h3 {
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-    font-size: 1.2em;
-    margin: 0.5em 0;
-    color: #333;
-}
-
-article p {
-    font-size: 0.95em;
-    line-height: 1.6em;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-   nav ul {
-      flex-direction: column;
-      padding: 0;
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
     }
-  
-    .sidebar, main {
-      width: 100%;
-      padding: 1em;
-    }
-  
-    main article {
-      margin-bottom: 1em;
-    }
-  }
 
-/* Printer-Friendly Version */
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+        order: -1;
+    }
+
+    article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+}
+
 @media print {
-    nav { display: none; } /* Hide navigation for print */
+    header, footer, nav {
+        display: none;
+    }
 }
