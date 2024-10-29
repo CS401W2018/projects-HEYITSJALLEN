@@ -56,6 +56,13 @@ a:hover {
     clear: both;
 }
 
+main {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 figure {
     margin: 0;
     padding: 0;
@@ -63,13 +70,6 @@ figure {
 
 figure img {
     max-width: 100%;
-}
-
-main {
-    width: 75%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 article {
