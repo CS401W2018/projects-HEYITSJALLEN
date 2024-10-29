@@ -77,6 +77,10 @@ article {
     box-shadow: 4px 4px 8px #00000033;
 }
 
+footer {
+    text-align: center;
+}
+
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
