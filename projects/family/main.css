@@ -1,5 +1,5 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     background-color: #f9f5e3;
     color: #333;
@@ -10,7 +10,7 @@ header {
     justify-content: center;
     background-color: rgb(235, 194, 118);
     width: 100%;
-    margin: 10; /* Ensure there is no margin */
+    /* Removed the invalid margin property */
 }
 
 .container {
@@ -23,7 +23,7 @@ aside {
 }
 
 header h1, figcaption, a, h2 {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
@@ -32,7 +32,7 @@ h1 {
 }
 
 p, li {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -40,12 +40,12 @@ nav {
     justify-content: space-around;
     padding: 1rem 0;
     background-color: rgb(232, 164, 80);
-    margin-bottom: 20px; /* Add this line */
+    margin-bottom: 20px;
 }
 
 nav a {
     color: black;
-    text-decoration: none; /* Removes underline from links */
+    text-decoration: none;
 }
 
 a:hover {
@@ -104,7 +104,6 @@ footer {
     aside {
         width: 100%;
     }
-
 }
 
 @media print {
