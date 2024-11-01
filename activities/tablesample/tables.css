@@ -12,6 +12,7 @@ header {
     border: medium solid black; 
     border-spacing: 0;
     border-collapse: collapse;
+    caption-side: bottom;
 }
 
 .schedule td, .schedule th {
