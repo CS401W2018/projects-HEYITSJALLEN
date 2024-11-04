@@ -1,0 +1,108 @@
+main {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    flex: 1;
+    background-color: lightgray;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+    
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    font-weight: bold;
+    text-align: center; 
+    font-size: 1.2em
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    padding: 0; 
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+  
+nav ul li a {
+    color: rgb(248, 153, 153); 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: rgb(200, 50, 50); /* Change to your desired hover color */
+}
+
+a {
+    text-decoration: none;
+}
+
+.schedule {
+    margin: 5px auto;
+    border: medium solid black; 
+    border-spacing: 0;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+.schedule caption {
+    font-weight: bold; /* Optional: makes the title bold */
+    margin-top: 10px; /* Adjust spacing above the caption */
+    margin-bottom: 10px; /* Adjust spacing below the caption */
+    font-size: 1.2em; /* Optional: increase font size */
+}
+
+.info caption {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.info td, .info th {
+    border: thin solid black;
+    padding: 5px;
+}
+
+.info thead {
+    background-color: red;
+    color: rgb(245, 192, 192);
+}
+
+.info tbody tr:nth-child(odd){
+    background-color: antiquewhite;
+}
+
+.info tbody tr:nth-child(even){
+    background-color: gray;
+}
+
+.info tfoot{
+    background-color:red;
+    color: white;
+}
+
+aside {
+    flex: 1; 
+    background-color: lightgray; 
+    padding: 10px; 
+    margin-left: 20px;
+}
+
+div {
+    flex: 3;
+}
