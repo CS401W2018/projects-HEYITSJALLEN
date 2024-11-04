@@ -49,6 +49,7 @@ nav ul li a:hover {
 
 a {
     text-decoration: none;
+    color: blue;
 }
 
 .schedule {
