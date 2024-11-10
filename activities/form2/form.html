@@ -11,47 +11,66 @@
     <main>
         <form action="processing.html" method="post">
             <fieldset>
-                <Legend>Sign up</Legend>
+                <legend>Sign up</legend>
+                
                 <div class="form-row">
-                    First name: <br><input type="text" name="first" value="Jared" required="required">
+                    <label for="first">First name:</label>
+                    <input type="text" id="first" name="first" value="Jared" required>
                 </div>
                 
                 <div class="form-row">
-                    Last name: <br><input type="text" name="last" placeholder="lastname">
+                    <label for="last">Last name:</label>
+                    <input type="text" id="last" name="last" placeholder="lastname">
                 </div>
-                <div>
-                    <input type="checkbox" name="remember" checked> Remember <menu type="context"></menu>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div>
-                    <input type="submit">
+
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
                 </div>
-                <div>Comments: <br><textarea name="comment" id=""></textarea></div>
-                <div>
-                   Class:
+
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
                 </div>
-                <div>
-                    
-                    <input type="Radio" value="Freshman"> Freshman <br>
-                    <input type="Radio" value="Sophomore"> Sophomore <br>
-                    <input type="Radio" value="Junior"> Junior <br>
-                    <input type="Radio" value="Senior"> Senior <br>
+
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comment"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="class">Class:</label>
+                    <select id="class" name="class">
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+
+                <div class="check-row">
+                    <input type="checkbox" id="remember" name="remember" checked>
+                    <label for="remember">Remember</label>
+                </div>
+
+                <div class="form-row">
+                    <label>Year:</label>
+                    <input type="radio" name="year" value="freshman"> Freshman<br>
+                    <input type="radio" name="year" value="sophomore"> Sophomore<br>
+                    <input type="radio" name="year" value="junior"> Junior<br>
+                    <input type="radio" name="year" value="senior"> Senior<br>
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" value="Submit">
                 </div>
             </fieldset>
         </form>
-        <br> <h3>
-            What are different ways to style your form?
-        </h3>
-        <p>
-            You can style a form in various ways, such as by using CSS to customize colors, borders, spacing, input field shapes, button styles, and animations for a more engaging user experience.
-        </p>
-        <h3>
-            Why does the professor like to use flex?
-        </h3>
-        <p>
-            Professors often prefer to use Flexbox because it simplifies responsive layout management, making it easy to align, distribute, and organize elements across different screen sizes.
-        </p>
-    </main>
-    <br> <footer> &copy; 2024 Jared Allen Wenceslao</footer>
-    
+    <footer>&copy; 2024 Jared Allen Wenceslao</footer>
 </body>
 </html>

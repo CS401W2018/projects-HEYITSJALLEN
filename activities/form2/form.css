@@ -2,13 +2,18 @@ body {
     background-color: antiquewhite;
 }
 
-header {
+header, footer {
     text-align: center;
+    font-size: 1.2em;
+    background-color: #555;
+    color: white;
+    padding: 10px;
 }
 
 fieldset {
     box-shadow: 3px 3px 3px red;
     background-color: aquamarine;
+    padding: 20px;
 }
 
 legend {
@@ -18,20 +23,9 @@ legend {
     color: aliceblue;
 }
 
-.form-row input {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: azure;
-}
-
-.form-row input:focus {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: azure;
-}
-
 .form-row {
     display: flex;
+    align-items: center;
     gap: 10px;
     margin-top: 10px;
 }
@@ -41,15 +35,51 @@ legend {
     text-align: right;
 }
 
+.form-row input, .form-row select, .form-row textarea {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.form-row input:focus {
+    border: 2px solid blue;
+}
+
 .check-row {
     display: flex;
+    align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
-.spacer {
-    width: 150px;
-    text-align: right;
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
 
+/* Media Query for Mobile View */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .form-row label {
+        text-align: left;
+        width: auto;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1em;
+    }
+}

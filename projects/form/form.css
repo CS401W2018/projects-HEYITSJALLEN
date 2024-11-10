@@ -1,0 +1,55 @@
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    text-align: center;
+}
+
+fieldset {
+    box-shadow: 3px 3px 3px red;
+    background-color: aquamarine;
+}
+
+legend {
+    border: medium solid black;
+    background-color: blueviolet;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.form-row input {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.form-row input:focus {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.check-row {
+    display: flex;
+    gap: 10px;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+
+
