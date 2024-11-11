@@ -1,14 +1,26 @@
 body {
     background-color: antiquewhite;
+    /* padding: 0px;
+    margin: 0px; */
 }
 
-header, footer {
+header {
     text-align: center;
     font-size: 1.2em;
     background-color: #555;
     color: white;
     padding: 10px;
     margin-bottom: 20px; /* Adds space below the header */
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #5cdb4b;
+    color: white;
+    padding: 20px;
+    box-shadow: 3px 3px 3px red;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 fieldset {
@@ -20,7 +32,7 @@ fieldset {
 legend {
     border: medium solid black;
     background-color: blueviolet;
-    padding: 10px;
+    padding: 15px;
     color: aliceblue;
 }
 
@@ -54,7 +66,7 @@ legend {
 }
 
 input[type="submit"] {
-    background-color: green;
+    background-color: rgb(10, 147, 10);
     color: white;
     padding: 10px 20px;
     border: none;
