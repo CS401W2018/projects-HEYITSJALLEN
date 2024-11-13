@@ -9,7 +9,7 @@
 <body>
     <header><h1>My Form</h1></header>
     <main>
-        <form action="processing.html" method="post">
+        <form id="myForm" action="processing.html" method="post">
             <fieldset>
                 <legend>Sign up</legend>
                 
@@ -71,7 +71,26 @@
                 </div>
             </fieldset>
         </form>
+        <h3>What is JavaScript? How did it get its name?</h3>
+        <p>JavaScript is a high-level, interpreted programming language primarily used for adding interactivity to web pages. It allows developers to create dynamic content, handle events (like clicks or form submissions), manipulate HTML and CSS, and interact with databases and servers, making it essential for front-end development. In addition to the front-end, JavaScript is also used for server-side development (via Node.js).</p><br>
+        <p>The name "JavaScript" was chosen as a marketing strategy to capitalize on the popularity of Java (another programming language, which was widely known at the time due to Sun Microsystems' successful marketing efforts). Despite the similarity in name, JavaScript and Java are two very different languages, both in terms of syntax and functionality.</p>
+        
+        <h3>What are the two ways you can run JavaScript?</h3>
+        <p>In the Browser(client), and on the on the Server(server)</p>
+
+        <h3>What was the most popular front-end js library?</h3>
+        <p>Historically, jQuery was the most popular front-end JavaScript library. It was created by John Resig in 2006 and quickly became a dominant tool for web development due to its ease of use and ability to handle cross-browser compatibility issues. jQuery simplified DOM manipulation, event handling, and AJAX requests, making it easier to write JavaScript that worked consistently across different browsers.</p>
+
+        <h3>What is the most popular front-end JS library today?    </h3>
+        <p>As of today, React (developed by Facebook) is the most popular front-end JavaScript library. React introduced a component-based architecture and a virtual DOM, which made building complex and high-performance user interfaces easier and more efficient. React's declarative nature, flexibility, and large ecosystem (with tools like React Router and Redux) have contributed to its dominance in the front-end development space.</p>
     </main>
     <footer>&copy; 2024 Jared Allen Wenceslao</footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const firstName = Document.getElementById('firstName').value;
+            alert("You added this information");
+        });
+    </script>
 </body>
 </html>
