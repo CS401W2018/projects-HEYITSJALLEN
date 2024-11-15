@@ -15,7 +15,7 @@
                 
                 <div class="form-row">
                     <label for="first">First name:</label>
-                    <input type="text" id="first" name="first" value="Jared" required>
+                    <input type="text" id="first" name="first" required>
                 </div>
                 
                 <div class="form-row">
@@ -112,7 +112,18 @@
         const formData = {
             firstName: firstName,
             lastName: lastName,
+            password: document.getElementById('password').value
         };
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST, submit.js", true);
+        xhr.setRequestHeader("Content-type", "application/json;charset=UTF8");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status ===200){
+                alert('Form submitted successfully.');
+            } else if (xhr.readyState === 4) {
+                alert ('Error submitting form');
+            }
+        }
         console.log(formData);
         alert("Form submitted successfully!");
     });
