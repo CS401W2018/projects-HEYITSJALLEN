@@ -84,6 +84,7 @@
         const firstName = document.getElementById('first').value;
         const lastName = document.getElementById('last').value;
         const dob = document.getElementById('dob').value;
+        const Core = document.getElementById('core').value;
 
         if (!firstName || !lastName) {
             alert("First and last name are required!");
@@ -119,6 +120,7 @@
         xhr.setRequestHeader("Content-type", "application/json;charset=UTF8");
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status ===200){
+                const response = JSON.parse(xhr.responseText)
                 message = JSON.parse(xhr.response).
                 alert('Form submitted successfully.');
             } else if (xhr.readyState === 4) {
