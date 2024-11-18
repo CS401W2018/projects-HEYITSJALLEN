@@ -7,8 +7,8 @@ body {
 header {
     text-align: center;
     font-size: 1.2em;
-    background-color: #555;
-    color: white;
+    background-color: #9e7eff;
+    color: rgb(235, 255, 15);
     padding: 10px;
     margin-bottom: 20px; /* Adds space below the header */
 }
@@ -16,7 +16,7 @@ header {
 footer {
     text-align: center;
     font-size: 1.2em;
-    background-color: #5cdb4b;
+    background-color: #517ee5;
     color: white;
     padding: 20px;
     box-shadow: 3px 3px 3px red;
@@ -25,7 +25,7 @@ footer {
 
 fieldset {
     box-shadow: 3px 3px 3px red;
-    background-color: aquamarine;
+    background-color: rgb(127, 168, 255);
     padding: 20px;
 }
 
