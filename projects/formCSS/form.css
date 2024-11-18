@@ -8,9 +8,10 @@ header {
     text-align: center;
     font-size: 1.2em;
     background-color: #9e7eff;
-    color: rgb(235, 255, 15);
+    color: rgb(234, 255, 5);
     padding: 10px;
     margin-bottom: 20px; /* Adds space below the header */
+    box-shadow: 3px 3px 3px red;
 }
 
 footer {
