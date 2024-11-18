@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+    <header><h1>My Form</h1></header>
+    <main>
+        <form id="myForm" action="processing.html" method="post">
+            <fieldset>
+                <legend>Sign up</legend>
+                
+                <div class="form-row">
+                    <label for="first">First name:</label>
+                    <input type="text" id="first" name="first" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="last">Last name:</label>
+                    <input type="text" id="last" name="last" placeholder="lastname">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comment"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="class">Core Area:</label>
+                    <select id="class" name="Core" required>
+                        <option value="Empty">--- Select ---</option>
+                        <option value="Arts & Humanities">Arts & Humanities</option>
+                        <option value="Math & Sciences">Math & Sciences</option>
+                        <option value="Professional Studies">Professional Studies</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label>Year:</label>
+                    <input type="radio" name="year" value="freshman"> Freshman<br>
+                    <input type="radio" name="year" value="sophomore"> Sophomore<br>
+                    <input type="radio" name="year" value="junior"> Junior<br>
+                    <input type="radio" name="year" value="senior"> Senior<br>
+                </div>
+
+                <div class="check-row">
+                    <input type="checkbox" id="remember" name="remember" checked>
+                    <label for="remember">Remember</label>
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+
+        <h3>What is AJAX?</h3>
+        <p>AJAX (Asynchronous JavaScript and XML) is a technique used in web development to send and receive data asynchronously without refreshing the web page.</p>
+        
+        <h3>Why do you put your JS Code in a separate file?</h3>
+        <p>We put JavaScript code in a separate file to keep the code organized, reusable, and maintainable, while also improving the performance by allowing the browser to cache the file.</p>
+    </main>
+
+    <footer>&copy; 2024 Jared Allen Wenceslao</footer>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            // Get form values
+            const firstName = document.getElementById('first').value;
+            const lastName = document.getElementById('last').value;
+            const dob = document.getElementById('dob').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const comments = document.getElementById('comments').value;
+            const coreArea = document.getElementById('class').value;
+            const year = document.querySelector('input[name="year"]:checked') ? document.querySelector('input[name="year"]:checked').value : ''; // Get selected radio button value for year
+
+            // Validate required fields
+            if (!firstName || !lastName) {
+                alert("First and last name are required!");
+                event.preventDefault();
+                return;
+            }
+
+            if (!email || !password) {
+                alert("Please fill out both email and password fields.");
+                event.preventDefault();
+                return;
+            }
+
+            if (!dob) {
+                alert("Date of birth is required.");
+                event.preventDefault();
+                return;
+            }
+
+            if (!coreArea || coreArea === "Empty") {
+                alert("Please select a core area.");
+                event.preventDefault();
+                return;
+            }
+
+            if (!year) {
+                alert("Please select your year.");
+                event.preventDefault();
+                return;
+            }
+
+            // Check if age is above 18
+            if (dob) {
+                const birthDate = new Date(dob);
+                const today = new Date();
+                const age = today.getFullYear() - birthDate.getFullYear();
+                const monthDiff = today.getMonth() - birthDate.getMonth();
+
+                if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+
+                if (age < 18) {
+                    alert("You must be 18 years old to sign up!");
+                    event.preventDefault();
+                    return;
+                }
+            }
+
+            // Collect form data
+            const formData = {
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                dob: dob,
+                password: password,
+                comments: comments,
+                coreArea: coreArea,
+                year: year
+            };
+
+            // Prepare the AJAX request
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "submit-endpoint.php", true);
+            xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert('Form submitted successfully.');
+                } else if (xhr.readyState === 4) {
+                    alert('Error submitting form');
+                }
+            };
+
+            // Send form data as JSON
+            xhr.send(JSON.stringify(formData));
+
+            // Prevent the default form submission so the AJAX request can be made
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

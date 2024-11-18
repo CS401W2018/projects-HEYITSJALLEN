@@ -1,0 +1,98 @@
+body {
+    background-color: antiquewhite;
+    /* padding: 0px;
+    margin: 0px; */
+}
+
+header {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px; /* Adds space below the header */
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #5cdb4b;
+    color: white;
+    padding: 20px;
+    box-shadow: 3px 3px 3px red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+fieldset {
+    box-shadow: 3px 3px 3px red;
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+legend {
+    border: medium solid black;
+    background-color: blueviolet;
+    padding: 15px;
+    color: aliceblue;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input, .form-row select, .form-row textarea {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.form-row input:focus {
+    border: 2px solid blue;
+}
+
+.check-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: rgb(10, 147, 10);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-row label {
+        text-align: left;
+        width: auto;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1em;
+    }
+}
