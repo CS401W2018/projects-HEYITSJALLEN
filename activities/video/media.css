@@ -2,14 +2,33 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#byuhcampus {
-    width: 250px;
-    margin: 0;
-    border: thin solid black;
-    box-shadow: 5px 5px 5px rgba(200, 200, 200, 200);
-    transform: scale(1.5,1.5);
+.btn {
+    display: block;
+    padding: 10px;
+    color: blueviolet;
+    background-color: rgb(164, 225, 225);
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    transition-property: background-color 3s ease-in-out;
+    transition-duration: 2s;
+    /* transition-timing-function: ease-in-out; */
+}
+
+.btn:hover {
+    background-color: red;
 }
 
 #byuhcampus {
+    width: 350px;
+    margin: 30px 50px;
+    border: thin solid black;
+    box-shadow: 5px 5px 3px rgba(200, 200, 200, 50%);
+    /* transform: scale(1.5,1.5); */
+    /* transform: translate(150px,50px); */
+    transform: rotate(8deg);
+}
+
+#byuhcampus img {
     width: 100%;
 }
