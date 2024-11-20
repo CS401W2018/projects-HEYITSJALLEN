@@ -1,0 +1,15 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#byuhcampus {
+    width: 250px;
+    margin: 0;
+    border: thin solid black;
+    box-shadow: 5px 5px 5px rgba(200, 200, 200, 200);
+    transform: scale(1.5,1.5);
+}
+
+#byuhcampus {
+    width: 100%;
+}
