@@ -5,12 +5,13 @@
 }
 
 header {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    background-color: rgb(179, 188, 50);
 }
 
 nav {
-    background-color: beige;
+    background-color: rgb(53, 62, 193);
     display: flex;
     justify-content: space-around;
     padding: 0px;
@@ -21,7 +22,7 @@ nav {
 
 /* Nav Styling */
 nav a {
-    color: #c93333;
+    color: #eadfdf;
     text-decoration: none;
     padding: 10px 30px;
     display: block;
