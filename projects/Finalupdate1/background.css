@@ -6,4 +6,30 @@
 
 header {
     font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+}
+
+nav {
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box; 
+    margin-bottom: 0px;
+}
+
+/* Nav Styling */
+nav a {
+    color: #c93333;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 10px; /* Adds space between links */
+}
+
+nav a:hover {
+    background-color: #1abc9c; 
+    color: #fff;
 }
