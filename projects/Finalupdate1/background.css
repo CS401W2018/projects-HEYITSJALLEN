@@ -45,3 +45,13 @@ p {
     margin: 15px;
     text-indent: 30px;
 }
+
+footer {
+    margin: 15px;
+}
+
+img {
+    margin: 20px;
+    width: 15cm;
+    display: flex;
+}
