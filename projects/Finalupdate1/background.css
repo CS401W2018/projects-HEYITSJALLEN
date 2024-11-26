@@ -51,7 +51,8 @@ footer {
 }
 
 img {
-    margin: 20px;
-    width: 15cm;
-    display: flex;
+    width: 350px;
+    margin: 30px 50px;
+    border: thin solid black;
+    box-shadow: 5px 5px 3px rgba(200, 200, 200, 50%);
 }
