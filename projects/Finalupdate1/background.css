@@ -34,7 +34,10 @@ nav a {
 nav a:hover {
     background-color: #1abc9c; 
     color: #fff;
+
 }
+
+
 
 h2 {
     margin: 15px;
@@ -58,33 +61,35 @@ img {
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+    display: block;
+    overflow-x: auto;
 }
+
 table th, table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
+
 table th {
     background-color: #f4f4f4;
     font-weight: bold;
 }
+
 table caption {
     margin-bottom: 10px;
     font-style: italic;
 }
 
 @media (max-width: 768px) {
-    img {
-        width: 100%;
-        height: auto;
-    }
     nav {
         flex-direction: column;
     }
     table {
-        font-size: 14px;
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
