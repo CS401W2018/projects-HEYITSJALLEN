@@ -37,8 +37,6 @@ nav a:hover {
 
 }
 
-
-
 h2 {
     margin: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -80,6 +78,53 @@ table caption {
     margin-bottom: 10px;
     font-style: italic;
 }
+
+
+fieldset{
+    padding: 10px;
+}
+form {
+    background: #ffffff; /* Form background color */
+    padding: 20px; /* Add padding inside the form */
+    border: 1px solid #ddd; /* Add a light border */
+    border-radius: 10px; /* Round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 500px; /* Set a maximum width for the form */
+    width: 100%; /* Ensure the form is responsive */
+}
+
+header, footer {
+    position: absolute; /* Keep header and footer out of the flow */
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    top: 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+h1, h2 {
+    text-align: center; /* Center the text */
+}
+
+button {
+    display: block;
+    margin: 0 auto; /* Center the button */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
 
 @media (max-width: 768px) {
     nav {

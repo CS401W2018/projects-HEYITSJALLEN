@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="background.css">
-    <title>Form</title>
+    <title>Visit Form</title>
+    <link rel="stylesheet" href="#">
 </head>
 <body>
     <header>
-        <h1>Visitor Feedback Form</h1>
+        <h1>Exploring the Heart of Cagayan de Oro: Must-Visit Destinations</h1>
     </header>
-    <main>
 
+    <main>
         <nav>
             <a href="index.html">Home</a>
             <a href="GastonPark.html">Gaston Park</a>
@@ -22,35 +22,27 @@
             <a href="Forms.html">Forms</a>
         </nav>
 
+        <h2>Feedback Form</h2>
         <form action="#" method="POST">
-            <!-- Personal Information -->
             <fieldset>
-                <legend>Personal Information</legend>
-    
-                <label for="fullName">Full Name:</label><br>
+                <legend>Visitor Information</legend>
+
+                <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" required><br><br>
-    
-                <label for="email">Email Address:</label><br>
+
+                <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required><br><br>
-    
-                <label for="contact">Contact Number:</label><br>
-                <input type="tel" id="contact" name="contact" required><br><br>
-            </fieldset>
-    
-            <!-- Visit Details -->
-            <fieldset>
-                <legend>Visit Details</legend>
-    
-                <label for="visitDate">Preferred Date of Visit:</label><br>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+
+                <label for="visitDate">Preferred Date of Visit:</label>
                 <input type="date" id="visitDate" name="visitDate" required><br><br>
-    
-                <label for="numGuests">Number of Visitors:</label><br>
-                <select id="purpose" name="purpose" required>
-                    <option value="solo">Solo</option>
-                    <option value="group">Group</option>
-                </select><br><br>
-    
-                <label for="purpose">Purpose of Visit:</label><br>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required><br><br>
+
+                <label for="purpose">Purpose of Visit:</label>
                 <select id="purpose" name="purpose" required>
                     <option value="leisure">Leisure</option>
                     <option value="business">Business</option>
@@ -58,45 +50,36 @@
                     <option value="educational">Educational</option>
                     <option value="others">Others</option>
                 </select><br><br>
-            </fieldset>
-    
-            <!-- Feedback Section -->
-            <fieldset>
-                <legend>Feedback Section</legend>
-    
-                <label for="learnAbout">How did you learn about these attractions?</label><br>
-                <select id="learnAbout" name="learnAbout" required>
+
+                <label for="learn">How did you learn about these attractions?</label>
+                <select id="learn" name="learn" required>
                     <option value="friends">Friends</option>
                     <option value="socialMedia">Social Media</option>
                     <option value="website">Website</option>
                     <option value="others">Others</option>
                 </select><br><br>
-    
+
                 <label for="comments">Comments or Suggestions:</label><br>
-                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea><br><br>
+
+                <label for="favoriteDestination">Favorite Type of Destination:</label>
+                <select id="favoriteDestination" name="favoriteDestination">
+                    <option value="historical">Historical</option>
+                    <option value="nature">Nature</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="relaxation">Relaxation</option>
+                </select><br><br>
+
+                <label for="updates">
+                    I consent to receive updates about Cagayan de Oro attractions.
+                    <input type="checkbox" id="updates" name="updates">
+                </label><br><br>
+
+                <button type="submit">Submit</button>
             </fieldset>
-    
-            <!-- Additional Information -->
-            <fieldset>
-                <legend>Additional Information</legend>
-    
-                <label>Favorite Type of Destination:</label><br>
-                <input type="checkbox" id="historical" name="destinationType" value="historical">
-                <label for="historical">Historical</label><br>
-                <input type="checkbox" id="nature" name="destinationType" value="nature">
-                <label for="nature">Nature</label><br>
-                <input type="checkbox" id="shopping" name="destinationType" value="shopping">
-                <label for="shopping">Shopping</label><br>
-                <input type="checkbox" id="relaxation" name="destinationType" value="relaxation">
-                <label for="relaxation">Relaxation</label><br><br>
-    
-                <label for="updates">Consent to Receive Updates:</label>
-                <input type="checkbox" id="updates" name="updates" value="yes"><br><br>
-            </fieldset>
-    
-            <!-- Submit Button -->
-            <input type="submit" value="Submit">
         </form>
+    </main>
+
     <footer>&copy; Jared Allen Wenceslao 2024</footer>
-    </body>
-    </html>
+</body>
+</html>
