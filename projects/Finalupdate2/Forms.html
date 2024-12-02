@@ -7,7 +7,9 @@
     <title>Form</title>
 </head>
 <body>
-    <header><h1>Form</h1></header>
+    <header>
+        <h1>Visitor Feedback Form</h1>
+    </header>
     <main>
 
         <nav>
@@ -20,71 +22,81 @@
             <a href="Forms.html">Forms</a>
         </nav>
 
-        <form id="myForm" action="processing.html" method="post">
+        <form action="#" method="POST">
+            <!-- Personal Information -->
             <fieldset>
-                <legend>Sign up</legend>
-                
-                <div class="form-row">
-                    <label for="first">First Name:</label>
-                    <input type="text" id="first" name="first" value="Jared" required>
-                </div>
-                
-                <div class="form-row">
-                    <label for="last">Last Name:</label>
-                    <input type="text" id="last" name="last" placeholder="lastname">
-                </div>
-
-                <div class="form-row">
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-row">
-                    <label for="dob">Birthday:</label>
-                    <input type="date" id="dob" name="dob">
-                </div>
-
-                <div class="form-row">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
-                </div>
-
-                <div class="form-row">
-                    <label for="comments">Comments:</label>
-                    <textarea id="comments" name="comment"></textarea>
-                </div>
-
-                <div class="form-row">
-                    <label for="class">Core Area:</label>
-                    <select id="class" name="Core">
-                        <option value="Empty">--- Select ---</option>
-                        <option value="Arts & Humanities">Arts & Humanities</option>
-                        <option value="Math & Sciences">Math & Sciences</option>
-                        <option value="Professional Studies">Professional Studies</option>
-                    </select>
-                </div>
-
-                <div class="form-row">
-                    <label>Year:</label>
-                    <input type="radio" name="year" value="freshman"> Freshman<br>
-                    <input type="radio" name="year" value="sophomore"> Sophomore<br>
-                    <input type="radio" name="year" value="junior"> Junior<br>
-                    <input type="radio" name="year" value="senior"> Senior<br>
-                </div>
-
-                <div class="check-row">
-                    <input type="checkbox" id="remember" name="remember" >
-                    <label for="remember">Remember</label>
-                </div>
-
-                <div class="form-row">
-                    <input type="submit" value="Submit">
-                </div>
+                <legend>Personal Information</legend>
+    
+                <label for="fullName">Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+    
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="contact">Contact Number:</label><br>
+                <input type="tel" id="contact" name="contact" required><br><br>
             </fieldset>
+    
+            <!-- Visit Details -->
+            <fieldset>
+                <legend>Visit Details</legend>
+    
+                <label for="visitDate">Preferred Date of Visit:</label><br>
+                <input type="date" id="visitDate" name="visitDate" required><br><br>
+    
+                <label for="numGuests">Number of Visitors:</label><br>
+                <select id="purpose" name="purpose" required>
+                    <option value="solo">Solo</option>
+                    <option value="group">Group</option>
+                </select><br><br>
+    
+                <label for="purpose">Purpose of Visit:</label><br>
+                <select id="purpose" name="purpose" required>
+                    <option value="leisure">Leisure</option>
+                    <option value="business">Business</option>
+                    <option value="religious">Religious</option>
+                    <option value="educational">Educational</option>
+                    <option value="others">Others</option>
+                </select><br><br>
+            </fieldset>
+    
+            <!-- Feedback Section -->
+            <fieldset>
+                <legend>Feedback Section</legend>
+    
+                <label for="learnAbout">How did you learn about these attractions?</label><br>
+                <select id="learnAbout" name="learnAbout" required>
+                    <option value="friends">Friends</option>
+                    <option value="socialMedia">Social Media</option>
+                    <option value="website">Website</option>
+                    <option value="others">Others</option>
+                </select><br><br>
+    
+                <label for="comments">Comments or Suggestions:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+            </fieldset>
+    
+            <!-- Additional Information -->
+            <fieldset>
+                <legend>Additional Information</legend>
+    
+                <label>Favorite Type of Destination:</label><br>
+                <input type="checkbox" id="historical" name="destinationType" value="historical">
+                <label for="historical">Historical</label><br>
+                <input type="checkbox" id="nature" name="destinationType" value="nature">
+                <label for="nature">Nature</label><br>
+                <input type="checkbox" id="shopping" name="destinationType" value="shopping">
+                <label for="shopping">Shopping</label><br>
+                <input type="checkbox" id="relaxation" name="destinationType" value="relaxation">
+                <label for="relaxation">Relaxation</label><br><br>
+    
+                <label for="updates">Consent to Receive Updates:</label>
+                <input type="checkbox" id="updates" name="updates" value="yes"><br><br>
+            </fieldset>
+    
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
         </form>
-      
-    </main>
-    <footer>&copy; 2024 Jared Allen Wenceslao</footer>
-    <script src="form.js"></script>
-</body>
-</html>
+    <footer>&copy; Jared Allen Wenceslao 2024</footer>
+    </body>
+    </html>
