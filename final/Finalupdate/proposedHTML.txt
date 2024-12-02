@@ -1,0 +1,68 @@
+Good places to visit in Cagayan de Oro:
+
+1. Gaston Park
+2. Mapawa Nature Park
+3. Saint Augustine Metropolitan Cathedral
+4. Seven Seas Waterpark and Resort
+5. Xavier Museum
+6. Eden's Solace
+
+
+Links:
+https://www.tripadvisor.com/Attractions-g317124-Activities-Cagayan_de_Oro_Misamis_Oriental_Province_Mindanao.html
+https://guidetothephilippines.ph/articles/what-to-experience/cagayan-de-oro-tourist-spots
+
+
+1. The title and topic of your site.
+
+"Exploring the Heart of Cagayan de Oro: Must-Visit Destinations"
+
+2. A brief paragraph about why you choose this topic.
+
+Cagayan de Oro, also known as the "City of Golden Friendship," is a vibrant destination in the Philippines, rich in culture, history, and natural beauty. This is the place where I was born and raised. By highlighting places like Gaston Park, Mapawa Nature Park, Saint Augustine Metropolitan Cathedral, and other amazing places in Cagayan de Oro, this site aims to showcase the city's charm to locals and travelers alike. Whether it's for adventure, relaxation, or a involvement of history, Cagayan de Oro has something for everyone. Sharing these attractions allows me to showcase its unique offerings and inspire others to experience the city’s warmth and wonder firsthand.
+
+3. List out the content you will have on the home page and each of the five pages (one will have a table).
+
+  1. Gaston Park
+  2. Mapawa Nature Park
+  3. Seven Seas Waterpark and Resort
+  4. Xavier Museum
+  5. Eden's Solace
+  
+4. What fields (or information you will collect) will you put into your form? What data will go on your table?
+
+  1. Personal Information
+  
+    Full Name
+    Email Address
+    Contact Number
+  
+  2. Visit Details
+
+    Preferred Date of Visit
+    Number of Guests
+    Purpose of Visit (Dropdown: Leisure, Business, Religious, Educational, Others)
+  
+  3. Feedback Section
+
+    How did you learn about these attractions? (Dropdown: Friends, Social Media, Website, Others)
+    Comments or Suggestions 
+
+  4. Additional Information
+    Favorite Type of Destination (Checkbox: Historical, Nature, Shopping, Relaxation)
+    Consent to Receive Updates (Checkbox)
+
+
+5. How will you collect information/images/content for your site? You need at least 5 references on your site, list out at least 2 of references you plan on using.
+
+  Online Research
+  
+  https://www.tripadvisor.com/Attractions-g317124-Activities-Cagayan_de_Oro_Misamis_Oriental_Province_Mindanao.html
+  https://guidetothephilippines.ph/articles/what-to-experience/cagayan-de-oro-tourist-spots
+  
+  Gathering information from reliable websites, travel blogs, and local tourism platforms to ensure accurate and engaging content.
+  https://kagay-anon.com/establish-your-website/
+  https://www.cagayandeoro.gov.ph/index.php/news/the-city-hall/the-departments-and-offices/26-city-tourism-cultural-affairs-office.html
+  
+
+6. Include a statement acknowledging that you have read the warnings below.
