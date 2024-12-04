@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(163, 192, 255);
+    text-align: center;
+    
+}
+
+nav {
+    background-color: rgb(53, 62, 193);
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box; 
+    margin-bottom: 0px;
+}
+
+/* Nav Styling */
+nav a {
+    color: #eadfdf;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0px; 
+}
+
+nav a:hover {
+    background-color: #1abc9c; 
+    color: #fff;
+
+}
+
+h2 {
+    margin: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    margin: 15px;
+    text-indent: 30px;
+}
+
+footer {
+    margin: 15px;
+}
+
+img {
+    width: 350px;
+    margin: 30px 50px;
+    border: thin solid black;
+    box-shadow: 5px 5px 3px rgba(200, 200, 200, 50%);
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table caption {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+
+fieldset{
+    padding: 10px;
+}
+
+form {
+    background: #ffffff; /* Form background color */
+    padding: 20px; /* Add padding inside the form */
+    border: 1px solid #ddd; /* Add a light border */
+    border-radius: 10px; /* Round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 500px; /* Set a maximum width for the form */
+    width: 100%; /* Ensure the form is responsive */
+}
+
+button {
+    display: block;
+    margin: 0 auto; /* Center the button */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    table {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

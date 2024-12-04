@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Places in CDO</title>
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+    <header>
+        <h1>Exploring the Heart of Cagayan de Oro: Must-Visit Destinations</h1><br>
+    </header>
+
+    <main>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="GastonPark.html">Gaston Park</a>
+            <a href="Mapawa.html">Mapawa Nature Park</a>
+            <a href="SaintAgustine.html">Saint Augustine</a>
+            <a href="SSWaterpark.html">Seven Seas</a>
+            <a href="MacahambusCave.html">Macahambus Cave</a>
+            <a href="Forms.html">Forms</a>
+        </nav>
+
+        <h2>Feedback Form</h2>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Visitor Information</legend>
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+
+                <label for="visitDate">Preferred Date of Visit:</label>
+                <input type="date" id="visitDate" name="visitDate" required><br><br>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required><br><br>
+
+                <label for="purpose">Purpose of Visit:</label>
+                <select id="purpose" name="purpose" required>
+                    <option value="leisure">Leisure</option>
+                    <option value="business">Business</option>
+                    <option value="religious">Religious</option>
+                    <option value="educational">Educational</option>
+                    <option value="others">Others</option>
+                </select><br><br>
+
+                <label for="learn">How did you learn about these attractions?</label>
+                <select id="learn" name="learn" required>
+                    <option value="friends">Friends</option>
+                    <option value="socialMedia">Social Media</option>
+                    <option value="website">Website</option>
+                    <option value="others">Others</option>
+                </select><br><br>
+
+                <label for="comments">Comments or Suggestions:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea><br><br>
+
+                <label for="favoriteDestination">Favorite Type of Destination:</label>
+                <select id="favoriteDestination" name="favoriteDestination">
+                    <option value="historical">Historical</option>
+                    <option value="nature">Nature</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="relaxation">Relaxation</option>
+                </select><br><br>
+
+                <label for="updates">
+                    I consent to receive updates about Cagayan de Oro attractions.
+                    <input type="checkbox" id="updates" name="updates">
+                </label><br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>&copy; Jared Allen Wenceslao 2024</footer>
+</body>
+</html>
