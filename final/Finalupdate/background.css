@@ -105,6 +105,14 @@ button {
     cursor: pointer;
 }
 
+.video-container {
+    text-align: center; /* Centers inline-block content */
+}
+
+.video-container iframe {
+    display: inline-block; /* Ensures the iframe respects text alignment */
+}
+
 button:hover {
     background-color: #0056b3;
 }
