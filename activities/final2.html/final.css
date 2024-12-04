@@ -11,8 +11,13 @@ nav a {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-    grid-gap: 20px; /* Space between the grid items */
+    grid-template-columns: auto auto auto; /* 3 columns with equal width */
+    border: solid black;
+}
+
+div {
+    border: solid black; /* Add a border to each div */
+    padding: 10px; /* Optional */
 }
 
 #footer {
