@@ -3,88 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Places in CDO</title>
     <link rel="stylesheet" href="background.css">
-    <title>Form</title>
 </head>
 <body>
-    <header><h1>Form</h1></header>
-    <main>
+    <header>
+        <h1>Exploring the Heart of Cagayan de Oro: Must-Visit Destinations</h1><br>
+    </header>
 
+    <main>
         <nav>
             <a href="index.html">Home</a>
             <a href="GastonPark.html">Gaston Park</a>
             <a href="Mapawa.html">Mapawa Nature Park</a>
             <a href="SaintAgustine.html">Saint Augustine</a>
-            <a href="Sevenseas.html">Seven Seas</a>
-            <a href="EdenSolace.html">Eden's Solace</a>
+            <a href="SSWaterpark.html">Seven Seas</a>
+            <a href="MacahambusCave.html">Macahambus Cave</a>
             <a href="Forms.html">Forms</a>
         </nav>
 
-        <form id="myForm" action="processing.html" method="post">
+        <h2>Feedback Form</h2>
+        <form action="#" method="POST">
             <fieldset>
-                <legend>Sign up</legend>
-                
-                <div class="form-row">
-                    <label for="first">First Name:</label>
-                    <input type="text" id="first" name="first" value="Jared" required>
-                </div>
-                
-                <div class="form-row">
-                    <label for="last">Last Name:</label>
-                    <input type="text" id="last" name="last" placeholder="lastname">
-                </div>
+                <legend>Visitor Information</legend>
 
-                <div class="form-row">
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br><br>
 
-                <div class="form-row">
-                    <label for="dob">Birthday:</label>
-                    <input type="date" id="dob" name="dob">
-                </div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
 
-                <div class="form-row">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
-                </div>
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
 
-                <div class="form-row">
-                    <label for="comments">Comments:</label>
-                    <textarea id="comments" name="comment"></textarea>
-                </div>
+                <label for="visitDate">Preferred Date of Visit:</label>
+                <input type="date" id="visitDate" name="visitDate" required><br><br>
 
-                <div class="form-row">
-                    <label for="class">Core Area:</label>
-                    <select id="class" name="Core">
-                        <option value="Empty">--- Select ---</option>
-                        <option value="Arts & Humanities">Arts & Humanities</option>
-                        <option value="Math & Sciences">Math & Sciences</option>
-                        <option value="Professional Studies">Professional Studies</option>
-                    </select>
-                </div>
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required><br><br>
 
-                <div class="form-row">
-                    <label>Year:</label>
-                    <input type="radio" name="year" value="freshman"> Freshman<br>
-                    <input type="radio" name="year" value="sophomore"> Sophomore<br>
-                    <input type="radio" name="year" value="junior"> Junior<br>
-                    <input type="radio" name="year" value="senior"> Senior<br>
-                </div>
+                <label for="purpose">Purpose of Visit:</label>
+                <select id="purpose" name="purpose" required>
+                    <option value="leisure">Leisure</option>
+                    <option value="business">Business</option>
+                    <option value="religious">Religious</option>
+                    <option value="educational">Educational</option>
+                    <option value="others">Others</option>
+                </select><br><br>
 
-                <div class="check-row">
-                    <input type="checkbox" id="remember" name="remember" >
-                    <label for="remember">Remember</label>
-                </div>
+                <label for="learn">How did you learn about these attractions?</label>
+                <select id="learn" name="learn" required>
+                    <option value="friends">Friends</option>
+                    <option value="socialMedia">Social Media</option>
+                    <option value="website">Website</option>
+                    <option value="others">Others</option>
+                </select><br><br>
 
-                <div class="form-row">
-                    <input type="submit" value="Submit">
-                </div>
+                <label for="comments">Comments or Suggestions:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea><br><br>
+
+                <label for="favoriteDestination">Favorite Type of Destination:</label>
+                <select id="favoriteDestination" name="favoriteDestination">
+                    <option value="historical">Historical</option>
+                    <option value="nature">Nature</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="relaxation">Relaxation</option>
+                </select><br><br>
+
+                <label for="updates">
+                    I consent to receive updates about Cagayan de Oro attractions.
+                    <input type="checkbox" id="updates" name="updates">
+                </label><br><br>
+
+                <button type="submit">Submit</button>
             </fieldset>
         </form>
-      
     </main>
-    <footer>&copy; 2024 Jared Allen Wenceslao</footer>
-    <script src="form.js"></script>
+
+    <footer>&copy; Jared Allen Wenceslao 2024</footer>
 </body>
 </html>
