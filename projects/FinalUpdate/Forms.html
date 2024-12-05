@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Places in CDO</title>
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+    <header>
+        <h1>Exploring the Heart of Cagayan de Oro: Must-Visit Destinations</h1><br>
+    </header>
+
+    <main>
+        <nav>
+            <a href="Cdo.html">Home</a>
+            <a href="GastonPark.html">Gaston Park</a>
+            <a href="Mapawa.html">Mapawa Nature Park</a>
+            <a href="SaintAgustine.html">Saint Augustine</a>
+            <a href="SSWaterpark.html">Seven Seas</a>
+            <a href="MacahambusCave.html">Macahambus Cave</a>
+            <a href="Forms.html">Forms</a>
+        </nav>
+
+        <form id="myForm" action="processing.html" method="post">
+            <fieldset>
+                <legend>Feedback Form</legend>
+                
+                <div class="form-row">
+                    <label for="first">First name:</label>
+                    <input type="text" id="first" name="first" placeholder="firstname" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="last">Last name:</label>
+                    <input type="text" id="last" name="last" placeholder="lastname" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="dov">Date of Visit:</label>
+                    <input type="date" id="dov" name="dov">
+                </div>
+
+                <div class="form-row">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="contactNumber" id="contactNumber" name="contactNumber">
+                </div>
+
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comment"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="class">Reason of visit:</label>
+                    <select id="class" name="Core">
+                        <option value="Empty">--- Select ---</option>
+                        <option value="historical">Historical</option>
+                        <option value="nature">Nature</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="relaxation">Relaxation</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <label for="remember">I consent to receive updates about Cagayan de Oro attractions.</label>
+                    <input type="checkbox" id="remember" name="remember" >
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>&copy; 2024 Jared Allen Wenceslao</footer>
+    <script src="form.js"></script>
+</body>
+</html>
