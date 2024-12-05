@@ -1,30 +1,26 @@
-document.querySelector("form").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the form from submitting the traditional way
+document.getElementById("myForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
 
     // Collect form inputs into an object
     const formData = {
-        fullName: document.getElementById("fullName").value.trim(),
+        firstName: document.getElementById("first").value.trim(),
+        lastName: document.getElementById("last").value.trim(),
         email: document.getElementById("email").value.trim(),
+        dateOfVisit: document.getElementById("dov").value,
         contactNumber: document.getElementById("contactNumber").value.trim(),
-        visitDate: document.getElementById("visitDate").value,
-        guests: document.getElementById("guests").value,
-        learn: document.getElementById("learn").value,
         comments: document.getElementById("comments").value.trim(),
-        favoriteDestination: document.getElementById("favoriteDestination").value,
-        updates: document.getElementById("updates").checked
+        reasonOfVisit: document.getElementById("class").value,
+        consent: document.getElementById("remember").checked,
     };
 
     // Validation
     const errors = [];
-    if (!formData.fullName) errors.push("Full name is required.");
-    if (!formData.email) errors.push("Email address is required.");
-    if (!formData.contactNumber) errors.push("Contact number is required.");
-    if (!formData.visitDate) errors.push("Preferred date of visit is required.");
-    if (!formData.guests || formData.guests <= 0) errors.push("Please enter a valid number of guests.");
-    if (formData.learn === "-Select-") errors.push("Please select how you learned about the attractions.");
-    if (formData.favoriteDestination === "-Select-") errors.push("Please select your favorite type of destination.");
+    if (!formData.firstName) errors.push("First name is required.");
+    if (!formData.lastName) errors.push("Last name is required.");
+    if (!formData.email) errors.push("Email is required.");
+    if (formData.reasonOfVisit === "Empty") errors.push("Please select a reason for your visit.");
 
-    // Show errors or proceed
+    // Display errors or proceed
     if (errors.length > 0) {
         alert(errors.join("\n"));
         return;
@@ -32,19 +28,19 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
     console.log("Form Data:", formData); // Log the form data
 
-    // Simulate an AJAX call to a mock endpoint
+    // Mock AJAX call to process the data
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "response.json", true); // Ensure this matches the location of your JSON file
+    xhr.open("POST", "processing.html", true); // Update endpoint as needed
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = function () {
         if (xhr.status === 200) {
-            const response = JSON.parse(xhr.responseText);
-            alert(response.message); // Show success message
-            document.querySelector("form").reset(); // Optionally reset the form
+            alert("Form submitted successfully!"); // Show success message
+            document.getElementById("myForm").reset(); // Reset the form
         } else {
-            alert("There was an error submitting the form.");
+            alert("Error submitting the form. Please try again later.");
         }
     };
 
-    xhr.send();
+    // Send the form data as JSON
+    xhr.send(JSON.stringify(formData));
 });

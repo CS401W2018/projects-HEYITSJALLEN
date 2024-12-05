@@ -77,10 +77,11 @@ figcaption {
     text-align: center; /* Centers the caption text */
 }
 
-
 table {
     display: block;
-    overflow-x: auto;
+    margin: 20px; /* Center the table and add vertical spacing */
+    border-collapse: collapse; /* Optional: Ensure borders don't double up */
+    width: auto; /* Adjust the width based on content */
 }
 
 table th, table td {
@@ -97,14 +98,22 @@ table th {
 table caption {
     margin-bottom: 10px;
     font-style: italic;
+    text-align: center; /* Center the caption */
 }
 
+fieldset {
+    background-color: rgb(127, 168, 255);
+}
 
-fieldset{
-    padding: 10px;
+legend {
+    border: medium solid black;
+    background-color: rgb(143, 35, 244);
+    padding: 15px;
+    color: aliceblue;
 }
 
 form {
+    margin-top: 20px; /* Space above the form */
     background: #ffffff; /* Form background color */
     padding: 20px; /* Add padding inside the form */
     border: 1px solid #ddd; /* Add a light border */
@@ -112,17 +121,50 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     max-width: 500px; /* Set a maximum width for the form */
     width: 100%; /* Ensure the form is responsive */
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto; /* Center the form horizontally */
 }
 
-form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input, .form-row select, .form-row textarea {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.form-row input:focus {
+    border: 2px solid blue;
+}
+
+.check-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    display: block; /* Makes the button a block element */
+    margin: 0 auto; /* Horizontally centers the button */
+    border-radius: 3.5px; /* Optional: Add rounded corners */
+    cursor: pointer; /* Optional: Change cursor to pointer */
+    font-size: 15px; /* Optional: Adjust font size */
 }
 
 .video-container {
-    text-align: center; /* Centers inline-block content */
+    text-align: center; 
 }
 
 .video-container iframe {

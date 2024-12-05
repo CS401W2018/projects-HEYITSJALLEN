@@ -22,56 +22,61 @@
             <a href="Forms.html">Forms</a>
         </nav>
 
-        <h2>Feedback Form</h2>
-        <form action="#" method="POST">
+        <form id="myForm" action="processing.html" method="post">
             <fieldset>
-                <legend>Visitor Information</legend>
+                <legend>Feedback Form</legend>
+                
+                <div class="form-row">
+                    <label for="first">First name:</label>
+                    <input type="text" id="first" name="first" placeholder="firstname" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="last">Last name:</label>
+                    <input type="text" id="last" name="last" placeholder="lastname" required>
+                </div>
 
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required><br><br>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <div class="form-row">
+                    <label for="dov">Date of Visit:</label>
+                    <input type="date" id="dov" name="dov">
+                </div>
 
-                <label for="contactNumber">Contact Number:</label>
-                <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+                <div class="form-row">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="contactNumber" id="contactNumber" name="contactNumber">
+                </div>
 
-                <label for="visitDate">Preferred Date of Visit:</label>
-                <input type="date" id="visitDate" name="visitDate" required><br><br>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comment"></textarea>
+                </div>
 
-                <label for="guests">Number of Guests or Visitors:</label>
-                <input type="number" id="guests" name="guests" min="1" max="100" required><br><br>
-
-                <label for="learn">How did you learn about these attractions?</label>
-                <select id="learn" name="learn" required>
-                    <option>-Select-</option>
-                    <option value="friends">Friends</option>
-                    <option value="socialMedia">Social Media</option>
-                    <option value="website">Website</option>
-                    <option value="others">Others</option>
-                </select><br><br>
-
-                <label for="comments">Comments or Suggestions:</label><br>
-                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea><br><br>
-
-                <label for="favoriteDestination">Favorite Type of Destination:</label>
-                <select id="favoriteDestination" name="favoriteDestination">
-                    <option>-Select-</option>
-                    <option value="historical">Historical</option>
-                    <option value="nature">Nature</option>
-                    <option value="shopping">Shopping</option>
-                    <option value="relaxation">Relaxation</option>
-                </select><br><br>
-
-                <label for="updates">
-                    I consent to receive updates about Cagayan de Oro attractions.
-                    <input type="checkbox" id="updates" name="updates">
-                </label><br>
-                <button type="button">Submit</button>
+                <div class="form-row">
+                    <label for="class">Reason of visit:</label>
+                    <select id="class" name="Core">
+                        <option value="Empty">--- Select ---</option>
+                        <option value="historical">Historical</option>
+                        <option value="nature">Nature</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="relaxation">Relaxation</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <label for="remember">I consent to receive updates about Cagayan de Oro attractions.</label>
+                    <input type="checkbox" id="remember" name="remember" >
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
             </fieldset>
         </form>
     </main>
-    <footer>&copy; Jared Allen Wenceslao 2024</footer>
-    <script src=""></script>
+    <footer>&copy; 2024 Jared Allen Wenceslao</footer>
+    <script src="form.js"></script>
 </body>
 </html>
