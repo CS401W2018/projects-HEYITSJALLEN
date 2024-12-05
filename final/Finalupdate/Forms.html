@@ -39,20 +39,12 @@
                 <label for="visitDate">Preferred Date of Visit:</label>
                 <input type="date" id="visitDate" name="visitDate" required><br><br>
 
-                <label for="guests">Number of Guests:</label>
-                <input type="number" id="guests" name="guests" min="1" required><br><br>
-
-                <label for="purpose">Purpose of Visit:</label>
-                <select id="purpose" name="purpose" required>
-                    <option value="leisure">Leisure</option>
-                    <option value="business">Business</option>
-                    <option value="religious">Religious</option>
-                    <option value="educational">Educational</option>
-                    <option value="others">Others</option>
-                </select><br><br>
+                <label for="guests">Number of Guests or Visitors:</label>
+                <input type="number" id="guests" name="guests" min="1" max="100" required><br><br>
 
                 <label for="learn">How did you learn about these attractions?</label>
                 <select id="learn" name="learn" required>
+                    <option>-Select-</option>
                     <option value="friends">Friends</option>
                     <option value="socialMedia">Social Media</option>
                     <option value="website">Website</option>
@@ -64,6 +56,7 @@
 
                 <label for="favoriteDestination">Favorite Type of Destination:</label>
                 <select id="favoriteDestination" name="favoriteDestination">
+                    <option>-Select-</option>
                     <option value="historical">Historical</option>
                     <option value="nature">Nature</option>
                     <option value="shopping">Shopping</option>
@@ -73,9 +66,8 @@
                 <label for="updates">
                     I consent to receive updates about Cagayan de Oro attractions.
                     <input type="checkbox" id="updates" name="updates">
-                </label><br><br>
-
-                <button type="submit">Submit</button>
+                </label><br>
+                <button type="button">Submit</button>
             </fieldset>
         </form>
     </main>

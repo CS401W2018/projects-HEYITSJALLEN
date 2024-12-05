@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 
 header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(163, 192, 255);
     text-align: center;
-    
+    font-size: larger;
+    padding: 25px;
 }
 
 nav {
@@ -19,6 +19,10 @@ nav {
     width: 100%;
     box-sizing: border-box; 
     margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Nav Styling */
@@ -92,17 +96,13 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     max-width: 500px; /* Set a maximum width for the form */
     width: 100%; /* Ensure the form is responsive */
+    margin: 0 auto;
 }
 
-button {
+form label {
     display: block;
-    margin: 0 auto; /* Center the button */
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    text-align: left;
+    margin-bottom: 5px;
 }
 
 .video-container {
@@ -113,39 +113,9 @@ button {
     display: inline-block; /* Ensures the iframe respects text alignment */
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-form {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-}
-
-
-form button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-}
-
-form button:hover {
-    background-color: #45a049;
+footer{
+    padding: auto;
+    width: auto;
 }
 
 @media (max-width: 768px) {
