@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -10,6 +11,7 @@ header {
     background-color: rgb(163, 192, 255);
     text-align: center;
     font-size: larger;
+    font-weight: bold;
     padding: 25px;
 }
 
@@ -18,23 +20,21 @@ nav {
     background-color: rgb(53, 62, 193);
     display: flex;
     justify-content: space-around;
-    padding: 0px;
+    padding: 10px 0;
     width: 100%;
-    box-sizing: border-box; 
-    margin-bottom: 0px;
 }
 
 nav a {
     color: #eadfdf;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 20px;
     display: block;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 0px; 
+    text-align: center;
 }
 
 nav a:hover {
-    background-color: #1abc9c; 
+    background-color: #1abc9c;
     color: #fff;
 }
 
@@ -42,172 +42,114 @@ nav a:hover {
 h2 {
     margin: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
 }
 
 p {
     margin: 15px;
     text-indent: 30px;
+    line-height: 1.6;
 }
 
 /* Footer */
 footer {
-    margin: 15px;
+    text-align: center;
+    margin: 15px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Images */
 img {
-    width: 550px;
-    margin: 30px 50px;
+    width: 100%;
+    max-width: 550px;
+    margin: 30px auto;
     border: thin solid black;
-    box-shadow: 5px 5px 3px rgba(200, 200, 200, 50%);
+    box-shadow: 5px 5px 3px rgba(200, 200, 200, 0.5);
 }
 
 figure {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers the image and caption */
-    margin: 5px 0; /* Adds spacing around the figure */
+    align-items: center;
+    margin: 20px 0;
 }
 
 figcaption {
-    margin-top: 5px; /* Adds spacing above the caption */
-    font-size: 0.9em; /* Adjusts the font size */
-    color: #555; /* Adds a neutral color for readability */
-    text-align: center; /* Centers the caption text */
-}
-
-/* Table */
-table {
-    display: block;
-    margin: 20px; /* Center the table and add vertical spacing */
-    border-collapse: collapse; /* Optional: Ensure borders don't double up */
-    width: auto; /* Adjust the width based on content */
-}
-
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-table th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
-table caption {
-    margin-bottom: 10px;
-    font-style: italic;
-    text-align: center; /* Center the caption */
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
 }
 
 /* Form Styling */
 form {
-    margin-top: 20px; /* Space above the form */
-    background: #ffffff; /* Form background color */
-    padding: 20px; /* Add padding inside the form */
-    border: 1px solid #ddd; /* Add a light border */
-    border-radius: 10px; /* Round corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    max-width: 500px; /* Set a maximum width for the form */
-    width: 100%; /* Ensure the form is responsive */
-    margin-left: auto;
-    margin-right: auto; /* Center the form horizontally */
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
 }
 
-.fieldset {
+fieldset {
     background-color: rgb(127, 168, 255);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 legend {
     background-color: rgb(65, 123, 224);
-    padding: 15px;
+    padding: 10px;
     color: aliceblue;
     text-align: center;
+    border-radius: 5px;
 }
 
 .form-row {
     display: flex;
-    flex-direction: column; /* Stack elements vertically by default */
-    margin-top: 10px;
-}
-
-.form-row label {
-    margin-bottom: 5px; /* Space between label and input */
-}
-
-.form-row input, .form-row select, .form-row textarea {
-    width: 100%; /* Full width for responsive design */
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(243, 248, 220);
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-}
-
-.form-row input:focus, .form-row textarea:focus, .form-row select:focus {
-    border: 2px solid blue; /* Highlight input on focus */
-    outline: none;
-}
-
-.check-row {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
     margin-top: 10px;
 }
 
 input[type="submit"] {
-    display: block; /* Makes the button a block element */
-    margin: 20px auto; /* Horizontally centers the button */
-    padding: 10px 20px; /* Add padding for a clickable area */
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 15px; /* Adjust font size */
+    font-size: 15px;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3;
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Stack navigation links */
+        flex-direction: column;
     }
     
     nav a {
-        text-align: center;
-        padding: 10px;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
     }
 
     form {
-        padding: 15px; /* Adjust padding for smaller screens */
+        padding: 15px;
     }
 
     .form-row {
-        align-items: flex-start; /* Align label and input to the left */
-    }
-
-    .form-row label {
-        text-align: left; /* Align labels left for mobile */
-        margin-bottom: 5px;
-        width: auto; /* Let labels take up natural width */
+        align-items: flex-start;
     }
 
     img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    table {
-        width: 100%; /* Ensure table scales to fit screen */
-    }
-
-    .check-row {
-        flex-direction: column; /* Stack checkbox and label */
-        align-items: flex-start;
+        margin: 20px auto;
     }
 }
