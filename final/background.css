@@ -130,6 +130,28 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+/* Table modifier */
+
+table {
+    display: block;
+    margin: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table caption {
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     nav {
