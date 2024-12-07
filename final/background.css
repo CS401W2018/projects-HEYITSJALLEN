@@ -120,8 +120,7 @@ form {
 }
 
 legend {
-    border: medium solid black;
-    background-color: rgb(143, 35, 244);
+    background-color: rgb(65, 123, 224);
     padding: 15px;
     color: aliceblue;
 }
@@ -140,7 +139,7 @@ legend {
     width: 100%; /* Full width for responsive design */
     padding: 10px;
     border-radius: 5px;
-    background-color: azure;
+    background-color: rgb(243, 248, 220);
     box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
