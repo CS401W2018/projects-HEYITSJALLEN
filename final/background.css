@@ -123,6 +123,7 @@ legend {
     background-color: rgb(65, 123, 224);
     padding: 15px;
     color: aliceblue;
+    text-align: center;
 }
 
 .form-row {
