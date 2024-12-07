@@ -1,8 +1,10 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Header */
 header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(163, 192, 255);
@@ -11,6 +13,7 @@ header {
     padding: 25px;
 }
 
+/* Navigation */
 nav {
     background-color: rgb(53, 62, 193);
     display: flex;
@@ -21,11 +24,6 @@ nav {
     margin-bottom: 0px;
 }
 
-a {
-    text-decoration: none;
-}
-
-/* Nav Styling */
 nav a {
     color: #eadfdf;
     text-decoration: none;
@@ -38,10 +36,9 @@ nav a {
 nav a:hover {
     background-color: #1abc9c; 
     color: #fff;
-
 }
 
-
+/* Main Content */
 h2 {
     margin: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -52,10 +49,12 @@ p {
     text-indent: 30px;
 }
 
+/* Footer */
 footer {
     margin: 15px;
 }
 
+/* Images */
 img {
     width: 550px;
     margin: 30px 50px;
@@ -77,6 +76,7 @@ figcaption {
     text-align: center; /* Centers the caption text */
 }
 
+/* Table */
 table {
     display: block;
     margin: 20px; /* Center the table and add vertical spacing */
@@ -101,17 +101,7 @@ table caption {
     text-align: center; /* Center the caption */
 }
 
-fieldset {
-    background-color: rgb(127, 168, 255);
-}
-
-legend {
-    border: medium solid black;
-    background-color: rgb(143, 35, 244);
-    padding: 15px;
-    color: aliceblue;
-}
-
+/* Form Styling */
 form {
     margin-top: 20px; /* Space above the form */
     background: #ffffff; /* Form background color */
@@ -125,27 +115,38 @@ form {
     margin-right: auto; /* Center the form horizontally */
 }
 
+.fieldset {
+    background-color: rgb(127, 168, 255);
+}
+
+legend {
+    border: medium solid black;
+    background-color: rgb(143, 35, 244);
+    padding: 15px;
+    color: aliceblue;
+}
+
 .form-row {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column; /* Stack elements vertically by default */
     margin-top: 10px;
-    text-align: center;
 }
 
 .form-row label {
-    width: 150px;
-    text-align: right;
+    margin-bottom: 5px; /* Space between label and input */
 }
 
 .form-row input, .form-row select, .form-row textarea {
-    padding: 5px;
+    width: 100%; /* Full width for responsive design */
+    padding: 10px;
     border-radius: 5px;
     background-color: azure;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
-.form-row input:focus {
-    border: 2px solid blue;
+.form-row input:focus, .form-row textarea:focus, .form-row select:focus {
+    border: 2px solid blue; /* Highlight input on focus */
+    outline: none;
 }
 
 .check-row {
@@ -157,29 +158,56 @@ form {
 
 input[type="submit"] {
     display: block; /* Makes the button a block element */
-    margin: 0 auto; /* Horizontally centers the button */
-    border-radius: 3.5px; /* Optional: Add rounded corners */
-    cursor: pointer; /* Optional: Change cursor to pointer */
-    font-size: 15px; /* Optional: Adjust font size */
+    margin: 20px auto; /* Horizontally centers the button */
+    padding: 10px 20px; /* Add padding for a clickable area */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px; /* Adjust font size */
 }
 
-.video-container {
-    text-align: center; 
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
-.video-container iframe {
-    display: inline-block; /* Ensures the iframe respects text alignment */
-}
-
+/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: column; /* Stack navigation links */
     }
-    table {
-        width: 100%;
+    
+    nav a {
+        text-align: center;
+        padding: 10px;
     }
+
+    form {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .form-row {
+        align-items: flex-start; /* Align label and input to the left */
+    }
+
+    .form-row label {
+        text-align: left; /* Align labels left for mobile */
+        margin-bottom: 5px;
+        width: auto; /* Let labels take up natural width */
+    }
+
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    table {
+        width: 100%; /* Ensure table scales to fit screen */
+    }
+
+    .check-row {
+        flex-direction: column; /* Stack checkbox and label */
+        align-items: flex-start;
     }
 }
