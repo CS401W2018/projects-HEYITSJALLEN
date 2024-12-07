@@ -22,6 +22,11 @@ nav {
     justify-content: space-around;
     padding: 10px 0;
     width: 100%;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav a {
